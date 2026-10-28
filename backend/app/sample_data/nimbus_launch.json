@@ -1,0 +1,70 @@
+{
+  "title": "Nimbus launch planning",
+  "messages": [
+    {
+      "source_id": "m1",
+      "speaker": "Ava",
+      "timestamp": "2026-03-02T15:00:00Z",
+      "content": "Let's plan the Nimbus launch. I want to cover onboarding, privacy, pricing, and the launch timeline."
+    },
+    {
+      "source_id": "m2",
+      "speaker": "Ben",
+      "timestamp": "2026-03-02T15:01:00Z",
+      "content": "Onboarding should be three steps. The onboarding flow must ask for a team name before the workspace is created."
+    },
+    {
+      "source_id": "m3",
+      "speaker": "Ava",
+      "timestamp": "2026-03-02T15:02:00Z",
+      "content": "I prefer a short onboarding checklist. We decided the onboarding checklist stays under five items."
+    },
+    {
+      "source_id": "m4",
+      "speaker": "Cleo",
+      "timestamp": "2026-03-02T15:04:00Z",
+      "content": "Privacy is a hard constraint. We cannot store raw message text in the analytics warehouse."
+    },
+    {
+      "source_id": "m5",
+      "speaker": "Ben",
+      "timestamp": "2026-03-02T15:05:00Z",
+      "content": "The privacy review depends on the onboarding fields we collect. The privacy review must finish before public launch."
+    },
+    {
+      "source_id": "m6",
+      "speaker": "Ava",
+      "timestamp": "2026-03-02T15:07:00Z",
+      "content": "Pricing will be 20 dollars per seat. I think annual pricing should include a discount."
+    },
+    {
+      "source_id": "m7",
+      "speaker": "Cleo",
+      "timestamp": "2026-03-02T15:08:00Z",
+      "content": "We decided pricing stays at 20 dollars per seat, and we prefer annual billing over monthly billing."
+    },
+    {
+      "source_id": "m8",
+      "speaker": "Ben",
+      "content": "The launch timeline has a beta in April. The public launch timeline depends on the privacy review."
+    },
+    {
+      "source_id": "m9",
+      "speaker": "Ava",
+      "timestamp": "2026-03-02T15:12:00Z",
+      "content": "Earlier we said the launch timeline was May. Actually the launch timeline is April. This supersedes the May launch timeline."
+    },
+    {
+      "source_id": "m10",
+      "speaker": "Cleo",
+      "timestamp": "2026-03-02T15:13:00Z",
+      "content": "Does the onboarding privacy review block the launch timeline, and is the pricing discount required for beta?"
+    },
+    {
+      "source_id": "m11",
+      "speaker": "Ava",
+      "timestamp": "2026-03-02T15:14:00Z",
+      "content": "The pricing page must mention the onboarding checklist length."
+    }
+  ]
+}

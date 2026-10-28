@@ -1,0 +1,93 @@
+{
+  "notes": "Answers and evidence stay out of the conversation import. Retrieval tests read this file only when scoring.",
+  "questions": [
+    {
+      "id": "greenhouse-schedule",
+      "category": "single_topic",
+      "question": "When is the greenhouse tomato schedule?",
+      "answer": "Monday and Thursday",
+      "evidence_source_ids": ["m1", "m2"],
+      "topic_keywords": ["greenhouse", "tomato"]
+    },
+    {
+      "id": "bakery-update",
+      "category": "temporal_update",
+      "question": "What is the bakery opening hour now?",
+      "answer": "7",
+      "evidence_source_ids": ["m5"],
+      "topic_keywords": ["bakery", "opening"]
+    },
+    {
+      "id": "seedling-hop",
+      "category": "multi_hop",
+      "question": "When is the seedling delivery?",
+      "answer": "It depends on the greenhouse tomato schedule, which is Monday and Thursday.",
+      "evidence_source_ids": ["m1", "m6"],
+      "topic_keywords": ["seedling", "greenhouse"]
+    },
+    {
+      "id": "river-picnic",
+      "category": "distractor",
+      "question": "When is the river bank picnic?",
+      "answer": "Saturday",
+      "evidence_source_ids": ["m10", "m11"],
+      "topic_keywords": ["river", "picnic"]
+    },
+    {
+      "id": "kyoto-ticket",
+      "category": "single_topic",
+      "question": "When is the Kyoto train ticket reserved?",
+      "answer": "June",
+      "evidence_source_ids": ["m8", "m9"],
+      "topic_keywords": ["kyoto", "train"]
+    },
+    {
+      "id": "savings-balance",
+      "category": "single_topic",
+      "question": "Is the savings account balance unchanged?",
+      "answer": "Yes, it is unchanged this month.",
+      "evidence_source_ids": ["m12", "m13"],
+      "topic_keywords": ["savings", "account"]
+    },
+    {
+      "id": "bakery-superseded",
+      "category": "temporal_update",
+      "question": "Which hour supersedes the bakery opening?",
+      "answer": "7",
+      "evidence_source_ids": ["m5"],
+      "topic_keywords": ["bakery", "opening"]
+    },
+    {
+      "id": "seedling-schedule",
+      "category": "multi_hop",
+      "question": "Which greenhouse schedule does the seedling delivery depend on?",
+      "answer": "The greenhouse tomato schedule, Monday and Thursday.",
+      "evidence_source_ids": ["m1", "m6"],
+      "topic_keywords": ["seedling", "greenhouse"]
+    },
+    {
+      "id": "picnic-saturday",
+      "category": "distractor",
+      "question": "Where is the Saturday river picnic?",
+      "answer": "Saturday near the bridge",
+      "evidence_source_ids": ["m10", "m11"],
+      "topic_keywords": ["river", "picnic"]
+    },
+    {
+      "id": "wifi-password",
+      "category": "unanswerable",
+      "question": "What is the office wifi password?",
+      "answer": null,
+      "evidence_source_ids": [],
+      "topic_keywords": []
+    },
+    {
+      "id": "printer-owner",
+      "category": "unanswerable",
+      "question": "Who owns the office printer?",
+      "answer": null,
+      "evidence_source_ids": [],
+      "topic_keywords": []
+    }
+  ]
+}

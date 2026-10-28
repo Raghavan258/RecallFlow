@@ -1,0 +1,14 @@
+---
+description: Project-specific architecture, constraints, conventions, and commands
+alwaysApply: false
+---
+
+Before implementation, identify and follow this repository's actual:
+- Architecture and entry points
+- Language and framework conventions
+- Dependency and environment requirements
+- API contracts and data models
+- Test, build, lint, and formatting commands
+- Security, privacy, and deployment constraints
+
+Do not assume any framework, command, directory, or dependency exists until verified.\n

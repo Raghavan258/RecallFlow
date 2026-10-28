@@ -1,0 +1,5293 @@
+{
+  "version": "benchmark-v1",
+  "limit": 10,
+  "token_budget": 80,
+  "token_budgets": [
+    20,
+    40,
+    80
+  ],
+  "tokenizer": "whitespace split of the memory text plus the Sources line",
+  "latency_method": "one time.perf_counter interval around retrieve, in milliseconds",
+  "memory_index": {
+    "b01": [
+      "memory:0"
+    ],
+    "b02": [
+      "memory:1"
+    ],
+    "b03": [
+      "memory:2",
+      "memory:3"
+    ],
+    "b04": [
+      "memory:4"
+    ],
+    "b05": [
+      "memory:5"
+    ],
+    "b06": [
+      "memory:6",
+      "memory:7"
+    ],
+    "b07": [
+      "memory:8"
+    ],
+    "b08": [
+      "memory:9"
+    ],
+    "b09": [
+      "memory:10",
+      "memory:11"
+    ],
+    "b10": [
+      "memory:12"
+    ],
+    "b11": [
+      "memory:13"
+    ],
+    "b12": [
+      "memory:14"
+    ],
+    "b13": [
+      "memory:15"
+    ],
+    "b14": [
+      "memory:16"
+    ],
+    "b15": [
+      "memory:17"
+    ],
+    "b16": [
+      "memory:18"
+    ],
+    "b17": [
+      "memory:19"
+    ],
+    "b18": [
+      "memory:20"
+    ],
+    "b19": [
+      "memory:21"
+    ],
+    "b20": [
+      "memory:22"
+    ],
+    "b21": [
+      "memory:23"
+    ],
+    "b22": [
+      "memory:24"
+    ],
+    "b23": [
+      "memory:25"
+    ],
+    "b24": [
+      "memory:26"
+    ],
+    "b25": [
+      "memory:27"
+    ],
+    "b26": [
+      "memory:28"
+    ],
+    "b27": [
+      "memory:29"
+    ],
+    "b28": [
+      "memory:30"
+    ],
+    "b29": [
+      "memory:31"
+    ],
+    "b30": [
+      "memory:32"
+    ],
+    "b31": [
+      "memory:33"
+    ],
+    "b32": [
+      "memory:34"
+    ],
+    "b33": [
+      "memory:35"
+    ],
+    "b34": [
+      "memory:36"
+    ],
+    "b35": [
+      "memory:37"
+    ],
+    "b36": [
+      "memory:38"
+    ],
+    "b37": [
+      "memory:39"
+    ],
+    "b38": [
+      "memory:40"
+    ],
+    "b39": [
+      "memory:41"
+    ],
+    "b40": [
+      "memory:42",
+      "memory:43"
+    ],
+    "b41": [
+      "memory:44",
+      "memory:45"
+    ],
+    "b42": [
+      "memory:46",
+      "memory:47"
+    ],
+    "b43": [
+      "memory:48"
+    ],
+    "b44": [
+      "memory:49"
+    ]
+  },
+  "paraphrase_overlap": [
+    {
+      "id": "kiln-para",
+      "split": "dev",
+      "query_terms": [
+        "how",
+        "hot",
+        "pottery",
+        "oven",
+        "after",
+        "revision"
+      ],
+      "shared_with_gold": []
+    },
+    {
+      "id": "gallery-para",
+      "split": "dev",
+      "query_terms": [
+        "when",
+        "people",
+        "come",
+        "after",
+        "time",
+        "change"
+      ],
+      "shared_with_gold": []
+    },
+    {
+      "id": "clay-para",
+      "split": "dev",
+      "query_terms": [
+        "how",
+        "many",
+        "sacks",
+        "requested",
+        "after",
+        "correction"
+      ],
+      "shared_with_gold": []
+    },
+    {
+      "id": "shipping-para",
+      "split": "dev",
+      "query_terms": [
+        "how",
+        "heavy",
+        "box",
+        "used",
+        "artwork"
+      ],
+      "shared_with_gold": []
+    },
+    {
+      "id": "apprentice-para",
+      "split": "dev",
+      "query_terms": [
+        "which",
+        "weekdays",
+        "trainees",
+        "practice"
+      ],
+      "shared_with_gold": []
+    },
+    {
+      "id": "poster-para",
+      "split": "dev",
+      "query_terms": [
+        "which",
+        "dye",
+        "picked",
+        "announcements"
+      ],
+      "shared_with_gold": []
+    },
+    {
+      "id": "rent-para",
+      "split": "dev",
+      "query_terms": [
+        "what",
+        "day",
+        "month",
+        "workspace",
+        "lease",
+        "paid"
+      ],
+      "shared_with_gold": [
+        "month"
+      ]
+    },
+    {
+      "id": "membership-para",
+      "split": "dev",
+      "query_terms": [
+        "what",
+        "entry",
+        "cost"
+      ],
+      "shared_with_gold": []
+    },
+    {
+      "id": "raku-para",
+      "split": "heldout",
+      "query_terms": [
+        "when",
+        "beginner",
+        "class"
+      ],
+      "shared_with_gold": [
+        "beginner"
+      ]
+    },
+    {
+      "id": "cabinet-para",
+      "split": "heldout",
+      "query_terms": [
+        "which",
+        "number",
+        "opens",
+        "equipment",
+        "locker"
+      ],
+      "shared_with_gold": []
+    },
+    {
+      "id": "volunteer-para",
+      "split": "heldout",
+      "query_terms": [
+        "who",
+        "runs",
+        "weekend",
+        "front",
+        "desk"
+      ],
+      "shared_with_gold": [
+        "desk"
+      ]
+    },
+    {
+      "id": "tea-para",
+      "split": "heldout",
+      "query_terms": [
+        "which",
+        "loose",
+        "leaf",
+        "kept",
+        "drinks",
+        "break",
+        "area"
+      ],
+      "shared_with_gold": []
+    },
+    {
+      "id": "crate-para-held",
+      "split": "heldout",
+      "query_terms": [
+        "how",
+        "heavy",
+        "container",
+        "pictures"
+      ],
+      "shared_with_gold": []
+    }
+  ],
+  "splits": {
+    "dev": {
+      "question_count": 41,
+      "answerable_count": 33,
+      "unanswerable_count": 8,
+      "modes": {
+        "keyword": {
+          "sample_count": 41,
+          "answerable_denominator": 33,
+          "unanswerable_denominator": 8,
+          "recall_at_1": 0.3485,
+          "recall_at_5": 0.7424,
+          "recall_at_10": 0.7424,
+          "mrr": 0.6515,
+          "mean_selected_tokens": 35.3171,
+          "budget_violations": 0,
+          "empty_result_rate_answerable": 0.2121,
+          "empty_result_rate_unanswerable": 0.75,
+          "mean_latency_ms": 0.413
+        },
+        "graph": {
+          "sample_count": 41,
+          "answerable_denominator": 33,
+          "unanswerable_denominator": 8,
+          "recall_at_1": 0.3485,
+          "recall_at_5": 0.7727,
+          "recall_at_10": 0.7727,
+          "mrr": 0.6515,
+          "mean_selected_tokens": 40.1463,
+          "budget_violations": 0,
+          "empty_result_rate_answerable": 0.2121,
+          "empty_result_rate_unanswerable": 0.75,
+          "mean_latency_ms": 0.7068
+        },
+        "budget": {
+          "sample_count": 41,
+          "answerable_denominator": 33,
+          "unanswerable_denominator": 8,
+          "recall_at_1": 0.3485,
+          "recall_at_5": 0.7727,
+          "recall_at_10": 0.7727,
+          "mrr": 0.6515,
+          "mean_selected_tokens": 37.0732,
+          "budget_violations": 0,
+          "empty_result_rate_answerable": 0.2121,
+          "empty_result_rate_unanswerable": 0.75,
+          "mean_latency_ms": 0.6903
+        }
+      },
+      "by_category": {
+        "keyword": {
+          "contradiction": {
+            "sample_count": 2,
+            "answerable_denominator": 2,
+            "unanswerable_denominator": 0,
+            "recall_at_1": 1.0,
+            "recall_at_5": 1.0,
+            "recall_at_10": 1.0,
+            "mrr": 1.0,
+            "mean_selected_tokens": 49.5,
+            "budget_violations": 0,
+            "empty_result_rate_answerable": 0.0,
+            "empty_result_rate_unanswerable": null,
+            "mean_latency_ms": 0.419
+          },
+          "dependency": {
+            "sample_count": 3,
+            "answerable_denominator": 3,
+            "unanswerable_denominator": 0,
+            "recall_at_1": 0.3333,
+            "recall_at_5": 0.6667,
+            "recall_at_10": 0.6667,
+            "mrr": 0.7778,
+            "mean_selected_tokens": 46.3333,
+            "budget_violations": 0,
+            "empty_result_rate_answerable": 0.0,
+            "empty_result_rate_unanswerable": null,
+            "mean_latency_ms": 0.4243
+          },
+          "direct": {
+            "sample_count": 13,
+            "answerable_denominator": 13,
+            "unanswerable_denominator": 0,
+            "recall_at_1": 0.2692,
+            "recall_at_5": 1.0,
+            "recall_at_10": 1.0,
+            "mrr": 0.7051,
+            "mean_selected_tokens": 49.6923,
+            "budget_violations": 0,
+            "empty_result_rate_answerable": 0.0,
+            "empty_result_rate_unanswerable": null,
+            "mean_latency_ms": 0.4602
+          },
+          "paraphrase": {
+            "sample_count": 8,
+            "answerable_denominator": 8,
+            "unanswerable_denominator": 0,
+            "recall_at_1": 0.0625,
+            "recall_at_5": 0.0625,
+            "recall_at_10": 0.0625,
+            "mrr": 0.125,
+            "mean_selected_tokens": 1.875,
+            "budget_violations": 0,
+            "empty_result_rate_answerable": 0.875,
+            "empty_result_rate_unanswerable": null,
+            "mean_latency_ms": 0.3424
+          },
+          "related": {
+            "sample_count": 5,
+            "answerable_denominator": 5,
+            "unanswerable_denominator": 0,
+            "recall_at_1": 0.5,
+            "recall_at_5": 1.0,
+            "recall_at_10": 1.0,
+            "mrr": 1.0,
+            "mean_selected_tokens": 48.6,
+            "budget_violations": 0,
+            "empty_result_rate_answerable": 0.0,
+            "empty_result_rate_unanswerable": null,
+            "mean_latency_ms": 0.4594
+          },
+          "superseded": {
+            "sample_count": 2,
+            "answerable_denominator": 2,
+            "unanswerable_denominator": 0,
+            "recall_at_1": 1.0,
+            "recall_at_5": 1.0,
+            "recall_at_10": 1.0,
+            "mrr": 1.0,
+            "mean_selected_tokens": 54.0,
+            "budget_violations": 0,
+            "empty_result_rate_answerable": 0.0,
+            "empty_result_rate_unanswerable": null,
+            "mean_latency_ms": 0.44
+          },
+          "unanswerable": {
+            "sample_count": 8,
+            "answerable_denominator": 0,
+            "unanswerable_denominator": 8,
+            "recall_at_1": null,
+            "recall_at_5": null,
+            "recall_at_10": null,
+            "mrr": null,
+            "mean_selected_tokens": 24.75,
+            "budget_violations": 0,
+            "empty_result_rate_answerable": null,
+            "empty_result_rate_unanswerable": 0.75,
+            "mean_latency_ms": 0.3658
+          }
+        },
+        "graph": {
+          "contradiction": {
+            "sample_count": 2,
+            "answerable_denominator": 2,
+            "unanswerable_denominator": 0,
+            "recall_at_1": 1.0,
+            "recall_at_5": 1.0,
+            "recall_at_10": 1.0,
+            "mrr": 1.0,
+            "mean_selected_tokens": 49.5,
+            "budget_violations": 0,
+            "empty_result_rate_answerable": 0.0,
+            "empty_result_rate_unanswerable": null,
+            "mean_latency_ms": 0.7
+          },
+          "dependency": {
+            "sample_count": 3,
+            "answerable_denominator": 3,
+            "unanswerable_denominator": 0,
+            "recall_at_1": 0.3333,
+            "recall_at_5": 1.0,
+            "recall_at_10": 1.0,
+            "mrr": 0.7778,
+            "mean_selected_tokens": 69.0,
+            "budget_violations": 0,
+            "empty_result_rate_answerable": 0.0,
+            "empty_result_rate_unanswerable": null,
+            "mean_latency_ms": 0.8353
+          },
+          "direct": {
+            "sample_count": 13,
+            "answerable_denominator": 13,
+            "unanswerable_denominator": 0,
+            "recall_at_1": 0.2692,
+            "recall_at_5": 1.0,
+            "recall_at_10": 1.0,
+            "mrr": 0.7051,
+            "mean_selected_tokens": 54.6923,
+            "budget_violations": 0,
+            "empty_result_rate_answerable": 0.0,
+            "empty_result_rate_unanswerable": null,
+            "mean_latency_ms": 0.7631
+          },
+          "paraphrase": {
+            "sample_count": 8,
+            "answerable_denominator": 8,
+            "unanswerable_denominator": 0,
+            "recall_at_1": 0.0625,
+            "recall_at_5": 0.0625,
+            "recall_at_10": 0.0625,
+            "mrr": 0.125,
+            "mean_selected_tokens": 1.875,
+            "budget_violations": 0,
+            "empty_result_rate_answerable": 0.875,
+            "empty_result_rate_unanswerable": null,
+            "mean_latency_ms": 0.6035
+          },
+          "related": {
+            "sample_count": 5,
+            "answerable_denominator": 5,
+            "unanswerable_denominator": 0,
+            "recall_at_1": 0.5,
+            "recall_at_5": 1.0,
+            "recall_at_10": 1.0,
+            "mrr": 1.0,
+            "mean_selected_tokens": 56.2,
+            "budget_violations": 0,
+            "empty_result_rate_answerable": 0.0,
+            "empty_result_rate_unanswerable": null,
+            "mean_latency_ms": 0.7368
+          },
+          "superseded": {
+            "sample_count": 2,
+            "answerable_denominator": 2,
+            "unanswerable_denominator": 0,
+            "recall_at_1": 1.0,
+            "recall_at_5": 1.0,
+            "recall_at_10": 1.0,
+            "mrr": 1.0,
+            "mean_selected_tokens": 54.0,
+            "budget_violations": 0,
+            "empty_result_rate_answerable": 0.0,
+            "empty_result_rate_unanswerable": null,
+            "mean_latency_ms": 0.7145
+          },
+          "unanswerable": {
+            "sample_count": 8,
+            "answerable_denominator": 0,
+            "unanswerable_denominator": 8,
+            "recall_at_1": null,
+            "recall_at_5": null,
+            "recall_at_10": null,
+            "mrr": null,
+            "mean_selected_tokens": 28.125,
+            "budget_violations": 0,
+            "empty_result_rate_answerable": null,
+            "empty_result_rate_unanswerable": 0.75,
+            "mean_latency_ms": 0.6516
+          }
+        },
+        "budget": {
+          "contradiction": {
+            "sample_count": 2,
+            "answerable_denominator": 2,
+            "unanswerable_denominator": 0,
+            "recall_at_1": 1.0,
+            "recall_at_5": 1.0,
+            "recall_at_10": 1.0,
+            "mrr": 1.0,
+            "mean_selected_tokens": 49.5,
+            "budget_violations": 0,
+            "empty_result_rate_answerable": 0.0,
+            "empty_result_rate_unanswerable": null,
+            "mean_latency_ms": 0.687
+          },
+          "dependency": {
+            "sample_count": 3,
+            "answerable_denominator": 3,
+            "unanswerable_denominator": 0,
+            "recall_at_1": 0.3333,
+            "recall_at_5": 1.0,
+            "recall_at_10": 1.0,
+            "mrr": 0.7778,
+            "mean_selected_tokens": 69.0,
+            "budget_violations": 0,
+            "empty_result_rate_answerable": 0.0,
+            "empty_result_rate_unanswerable": null,
+            "mean_latency_ms": 0.775
+          },
+          "direct": {
+            "sample_count": 13,
+            "answerable_denominator": 13,
+            "unanswerable_denominator": 0,
+            "recall_at_1": 0.2692,
+            "recall_at_5": 1.0,
+            "recall_at_10": 1.0,
+            "mrr": 0.7051,
+            "mean_selected_tokens": 50.7692,
+            "budget_violations": 0,
+            "empty_result_rate_answerable": 0.0,
+            "empty_result_rate_unanswerable": null,
+            "mean_latency_ms": 0.727
+          },
+          "paraphrase": {
+            "sample_count": 8,
+            "answerable_denominator": 8,
+            "unanswerable_denominator": 0,
+            "recall_at_1": 0.0625,
+            "recall_at_5": 0.0625,
+            "recall_at_10": 0.0625,
+            "mrr": 0.125,
+            "mean_selected_tokens": 1.875,
+            "budget_violations": 0,
+            "empty_result_rate_answerable": 0.875,
+            "empty_result_rate_unanswerable": null,
+            "mean_latency_ms": 0.6198
+          },
+          "related": {
+            "sample_count": 5,
+            "answerable_denominator": 5,
+            "unanswerable_denominator": 0,
+            "recall_at_1": 0.5,
+            "recall_at_5": 1.0,
+            "recall_at_10": 1.0,
+            "mrr": 1.0,
+            "mean_selected_tokens": 56.2,
+            "budget_violations": 0,
+            "empty_result_rate_answerable": 0.0,
+            "empty_result_rate_unanswerable": null,
+            "mean_latency_ms": 0.7228
+          },
+          "superseded": {
+            "sample_count": 2,
+            "answerable_denominator": 2,
+            "unanswerable_denominator": 0,
+            "recall_at_1": 1.0,
+            "recall_at_5": 1.0,
+            "recall_at_10": 1.0,
+            "mrr": 1.0,
+            "mean_selected_tokens": 54.0,
+            "budget_violations": 0,
+            "empty_result_rate_answerable": 0.0,
+            "empty_result_rate_unanswerable": null,
+            "mean_latency_ms": 0.7065
+          },
+          "unanswerable": {
+            "sample_count": 8,
+            "answerable_denominator": 0,
+            "unanswerable_denominator": 8,
+            "recall_at_1": null,
+            "recall_at_5": null,
+            "recall_at_10": null,
+            "mrr": null,
+            "mean_selected_tokens": 18.75,
+            "budget_violations": 0,
+            "empty_result_rate_answerable": null,
+            "empty_result_rate_unanswerable": 0.75,
+            "mean_latency_ms": 0.6459
+          }
+        }
+      },
+      "budget_sweep": {
+        "20": {
+          "modes": {
+            "budget": {
+              "sample_count": 41,
+              "answerable_denominator": 33,
+              "unanswerable_denominator": 8,
+              "recall_at_1": 0.3485,
+              "recall_at_5": 0.3939,
+              "recall_at_10": 0.3939,
+              "mrr": 0.5909,
+              "mean_selected_tokens": 10.5122,
+              "budget_violations": 0,
+              "empty_result_rate_answerable": 0.2121,
+              "empty_result_rate_unanswerable": 0.75,
+              "mean_latency_ms": 0.6962
+            }
+          },
+          "by_category": {
+            "contradiction": {
+              "sample_count": 2,
+              "answerable_denominator": 2,
+              "unanswerable_denominator": 0,
+              "recall_at_1": 1.0,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "mrr": 1.0,
+              "mean_selected_tokens": 18.5,
+              "budget_violations": 0,
+              "empty_result_rate_answerable": 0.0,
+              "empty_result_rate_unanswerable": null,
+              "mean_latency_ms": 0.688
+            },
+            "dependency": {
+              "sample_count": 3,
+              "answerable_denominator": 3,
+              "unanswerable_denominator": 0,
+              "recall_at_1": 0.3333,
+              "recall_at_5": 0.6667,
+              "recall_at_10": 0.6667,
+              "mrr": 0.6667,
+              "mean_selected_tokens": 17.3333,
+              "budget_violations": 0,
+              "empty_result_rate_answerable": 0.0,
+              "empty_result_rate_unanswerable": null,
+              "mean_latency_ms": 0.77
+            },
+            "direct": {
+              "sample_count": 13,
+              "answerable_denominator": 13,
+              "unanswerable_denominator": 0,
+              "recall_at_1": 0.2692,
+              "recall_at_5": 0.3077,
+              "recall_at_10": 0.3077,
+              "mrr": 0.5769,
+              "mean_selected_tokens": 14.8462,
+              "budget_violations": 0,
+              "empty_result_rate_answerable": 0.0,
+              "empty_result_rate_unanswerable": null,
+              "mean_latency_ms": 0.7356
+            },
+            "paraphrase": {
+              "sample_count": 8,
+              "answerable_denominator": 8,
+              "unanswerable_denominator": 0,
+              "recall_at_1": 0.0625,
+              "recall_at_5": 0.0625,
+              "recall_at_10": 0.0625,
+              "mrr": 0.125,
+              "mean_selected_tokens": 1.875,
+              "budget_violations": 0,
+              "empty_result_rate_answerable": 0.875,
+              "empty_result_rate_unanswerable": null,
+              "mean_latency_ms": 0.6042
+            },
+            "related": {
+              "sample_count": 5,
+              "answerable_denominator": 5,
+              "unanswerable_denominator": 0,
+              "recall_at_1": 0.5,
+              "recall_at_5": 0.5,
+              "recall_at_10": 0.5,
+              "mrr": 1.0,
+              "mean_selected_tokens": 13.2,
+              "budget_violations": 0,
+              "empty_result_rate_answerable": 0.0,
+              "empty_result_rate_unanswerable": null,
+              "mean_latency_ms": 0.7308
+            },
+            "superseded": {
+              "sample_count": 2,
+              "answerable_denominator": 2,
+              "unanswerable_denominator": 0,
+              "recall_at_1": 1.0,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "mrr": 1.0,
+              "mean_selected_tokens": 18.5,
+              "budget_violations": 0,
+              "empty_result_rate_answerable": 0.0,
+              "empty_result_rate_unanswerable": null,
+              "mean_latency_ms": 0.7295
+            },
+            "unanswerable": {
+              "sample_count": 8,
+              "answerable_denominator": 0,
+              "unanswerable_denominator": 8,
+              "recall_at_1": null,
+              "recall_at_5": null,
+              "recall_at_10": null,
+              "mrr": null,
+              "mean_selected_tokens": 3.875,
+              "budget_violations": 0,
+              "empty_result_rate_answerable": null,
+              "empty_result_rate_unanswerable": 0.75,
+              "mean_latency_ms": 0.6687
+            }
+          }
+        },
+        "40": {
+          "modes": {
+            "budget": {
+              "sample_count": 41,
+              "answerable_denominator": 33,
+              "unanswerable_denominator": 8,
+              "recall_at_1": 0.3485,
+              "recall_at_5": 0.697,
+              "recall_at_10": 0.697,
+              "mrr": 0.6515,
+              "mean_selected_tokens": 22.5366,
+              "budget_violations": 0,
+              "empty_result_rate_answerable": 0.2121,
+              "empty_result_rate_unanswerable": 0.75,
+              "mean_latency_ms": 0.7093
+            }
+          },
+          "by_category": {
+            "contradiction": {
+              "sample_count": 2,
+              "answerable_denominator": 2,
+              "unanswerable_denominator": 0,
+              "recall_at_1": 1.0,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "mrr": 1.0,
+              "mean_selected_tokens": 29.5,
+              "budget_violations": 0,
+              "empty_result_rate_answerable": 0.0,
+              "empty_result_rate_unanswerable": null,
+              "mean_latency_ms": 0.6985
+            },
+            "dependency": {
+              "sample_count": 3,
+              "answerable_denominator": 3,
+              "unanswerable_denominator": 0,
+              "recall_at_1": 0.3333,
+              "recall_at_5": 0.8333,
+              "recall_at_10": 0.8333,
+              "mrr": 0.7778,
+              "mean_selected_tokens": 33.3333,
+              "budget_violations": 0,
+              "empty_result_rate_answerable": 0.0,
+              "empty_result_rate_unanswerable": null,
+              "mean_latency_ms": 0.7737
+            },
+            "direct": {
+              "sample_count": 13,
+              "answerable_denominator": 13,
+              "unanswerable_denominator": 0,
+              "recall_at_1": 0.2692,
+              "recall_at_5": 0.8846,
+              "recall_at_10": 0.8846,
+              "mrr": 0.7051,
+              "mean_selected_tokens": 33.0769,
+              "budget_violations": 0,
+              "empty_result_rate_answerable": 0.0,
+              "empty_result_rate_unanswerable": null,
+              "mean_latency_ms": 0.7309
+            },
+            "paraphrase": {
+              "sample_count": 8,
+              "answerable_denominator": 8,
+              "unanswerable_denominator": 0,
+              "recall_at_1": 0.0625,
+              "recall_at_5": 0.0625,
+              "recall_at_10": 0.0625,
+              "mrr": 0.125,
+              "mean_selected_tokens": 1.875,
+              "budget_violations": 0,
+              "empty_result_rate_answerable": 0.875,
+              "empty_result_rate_unanswerable": null,
+              "mean_latency_ms": 0.6405
+            },
+            "related": {
+              "sample_count": 5,
+              "answerable_denominator": 5,
+              "unanswerable_denominator": 0,
+              "recall_at_1": 0.5,
+              "recall_at_5": 0.9,
+              "recall_at_10": 0.9,
+              "mrr": 1.0,
+              "mean_selected_tokens": 34.8,
+              "budget_violations": 0,
+              "empty_result_rate_answerable": 0.0,
+              "empty_result_rate_unanswerable": null,
+              "mean_latency_ms": 0.7452
+            },
+            "superseded": {
+              "sample_count": 2,
+              "answerable_denominator": 2,
+              "unanswerable_denominator": 0,
+              "recall_at_1": 1.0,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "mrr": 1.0,
+              "mean_selected_tokens": 35.0,
+              "budget_violations": 0,
+              "empty_result_rate_answerable": 0.0,
+              "empty_result_rate_unanswerable": null,
+              "mean_latency_ms": 0.727
+            },
+            "unanswerable": {
+              "sample_count": 8,
+              "answerable_denominator": 0,
+              "unanswerable_denominator": 8,
+              "recall_at_1": null,
+              "recall_at_5": null,
+              "recall_at_10": null,
+              "mrr": null,
+              "mean_selected_tokens": 9.5,
+              "budget_violations": 0,
+              "empty_result_rate_answerable": null,
+              "empty_result_rate_unanswerable": 0.75,
+              "mean_latency_ms": 0.6946
+            }
+          }
+        },
+        "80": {
+          "modes": {
+            "budget": {
+              "sample_count": 41,
+              "answerable_denominator": 33,
+              "unanswerable_denominator": 8,
+              "recall_at_1": 0.3485,
+              "recall_at_5": 0.7727,
+              "recall_at_10": 0.7727,
+              "mrr": 0.6515,
+              "mean_selected_tokens": 37.0732,
+              "budget_violations": 0,
+              "empty_result_rate_answerable": 0.2121,
+              "empty_result_rate_unanswerable": 0.75,
+              "mean_latency_ms": 0.7008
+            }
+          },
+          "by_category": {
+            "contradiction": {
+              "sample_count": 2,
+              "answerable_denominator": 2,
+              "unanswerable_denominator": 0,
+              "recall_at_1": 1.0,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "mrr": 1.0,
+              "mean_selected_tokens": 49.5,
+              "budget_violations": 0,
+              "empty_result_rate_answerable": 0.0,
+              "empty_result_rate_unanswerable": null,
+              "mean_latency_ms": 0.6915
+            },
+            "dependency": {
+              "sample_count": 3,
+              "answerable_denominator": 3,
+              "unanswerable_denominator": 0,
+              "recall_at_1": 0.3333,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "mrr": 0.7778,
+              "mean_selected_tokens": 69.0,
+              "budget_violations": 0,
+              "empty_result_rate_answerable": 0.0,
+              "empty_result_rate_unanswerable": null,
+              "mean_latency_ms": 0.7747
+            },
+            "direct": {
+              "sample_count": 13,
+              "answerable_denominator": 13,
+              "unanswerable_denominator": 0,
+              "recall_at_1": 0.2692,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "mrr": 0.7051,
+              "mean_selected_tokens": 50.7692,
+              "budget_violations": 0,
+              "empty_result_rate_answerable": 0.0,
+              "empty_result_rate_unanswerable": null,
+              "mean_latency_ms": 0.7479
+            },
+            "paraphrase": {
+              "sample_count": 8,
+              "answerable_denominator": 8,
+              "unanswerable_denominator": 0,
+              "recall_at_1": 0.0625,
+              "recall_at_5": 0.0625,
+              "recall_at_10": 0.0625,
+              "mrr": 0.125,
+              "mean_selected_tokens": 1.875,
+              "budget_violations": 0,
+              "empty_result_rate_answerable": 0.875,
+              "empty_result_rate_unanswerable": null,
+              "mean_latency_ms": 0.5929
+            },
+            "related": {
+              "sample_count": 5,
+              "answerable_denominator": 5,
+              "unanswerable_denominator": 0,
+              "recall_at_1": 0.5,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "mrr": 1.0,
+              "mean_selected_tokens": 56.2,
+              "budget_violations": 0,
+              "empty_result_rate_answerable": 0.0,
+              "empty_result_rate_unanswerable": null,
+              "mean_latency_ms": 0.7784
+            },
+            "superseded": {
+              "sample_count": 2,
+              "answerable_denominator": 2,
+              "unanswerable_denominator": 0,
+              "recall_at_1": 1.0,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "mrr": 1.0,
+              "mean_selected_tokens": 54.0,
+              "budget_violations": 0,
+              "empty_result_rate_answerable": 0.0,
+              "empty_result_rate_unanswerable": null,
+              "mean_latency_ms": 0.7435
+            },
+            "unanswerable": {
+              "sample_count": 8,
+              "answerable_denominator": 0,
+              "unanswerable_denominator": 8,
+              "recall_at_1": null,
+              "recall_at_5": null,
+              "recall_at_10": null,
+              "mrr": null,
+              "mean_selected_tokens": 18.75,
+              "budget_violations": 0,
+              "empty_result_rate_answerable": null,
+              "empty_result_rate_unanswerable": 0.75,
+              "mean_latency_ms": 0.6474
+            }
+          }
+        }
+      },
+      "questions": [
+        {
+          "id": "kiln-before",
+          "split": "dev",
+          "category": "direct",
+          "modes": {
+            "keyword": {
+              "recall_at_1": 0.0,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "reciprocal_rank": 0.3333,
+              "first_relevant_rank": 3,
+              "selected_count": 6,
+              "selected_tokens": 68,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.938,
+              "evidence_source_ids": [
+                "b03",
+                "b01",
+                "b02",
+                "b10",
+                "b37"
+              ]
+            },
+            "graph": {
+              "recall_at_1": 0.0,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "reciprocal_rank": 0.3333,
+              "first_relevant_rank": 3,
+              "selected_count": 6,
+              "selected_tokens": 68,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 1.069,
+              "evidence_source_ids": [
+                "b03",
+                "b01",
+                "b02",
+                "b10",
+                "b37"
+              ]
+            },
+            "budget": {
+              "recall_at_1": 0.0,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "reciprocal_rank": 0.3333,
+              "first_relevant_rank": 3,
+              "selected_count": 6,
+              "selected_tokens": 68,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.842,
+              "evidence_source_ids": [
+                "b03",
+                "b01",
+                "b02",
+                "b10",
+                "b37"
+              ]
+            }
+          }
+        },
+        {
+          "id": "gallery-before",
+          "split": "dev",
+          "category": "direct",
+          "modes": {
+            "keyword": {
+              "recall_at_1": 0.0,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "reciprocal_rank": 0.3333,
+              "first_relevant_rank": 3,
+              "selected_count": 4,
+              "selected_tokens": 40,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.433,
+              "evidence_source_ids": [
+                "b06",
+                "b04",
+                "b05"
+              ]
+            },
+            "graph": {
+              "recall_at_1": 0.0,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "reciprocal_rank": 0.3333,
+              "first_relevant_rank": 3,
+              "selected_count": 4,
+              "selected_tokens": 40,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.736,
+              "evidence_source_ids": [
+                "b06",
+                "b04",
+                "b05"
+              ]
+            },
+            "budget": {
+              "recall_at_1": 0.0,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "reciprocal_rank": 0.3333,
+              "first_relevant_rank": 3,
+              "selected_count": 4,
+              "selected_tokens": 40,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.704,
+              "evidence_source_ids": [
+                "b06",
+                "b04",
+                "b05"
+              ]
+            }
+          }
+        },
+        {
+          "id": "clay-before",
+          "split": "dev",
+          "category": "direct",
+          "modes": {
+            "keyword": {
+              "recall_at_1": 0.0,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "reciprocal_rank": 0.3333,
+              "first_relevant_rank": 3,
+              "selected_count": 5,
+              "selected_tokens": 57,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.452,
+              "evidence_source_ids": [
+                "b09",
+                "b07",
+                "b08",
+                "b13"
+              ]
+            },
+            "graph": {
+              "recall_at_1": 0.0,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "reciprocal_rank": 0.3333,
+              "first_relevant_rank": 3,
+              "selected_count": 5,
+              "selected_tokens": 57,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.739,
+              "evidence_source_ids": [
+                "b09",
+                "b07",
+                "b08",
+                "b13"
+              ]
+            },
+            "budget": {
+              "recall_at_1": 0.0,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "reciprocal_rank": 0.3333,
+              "first_relevant_rank": 3,
+              "selected_count": 5,
+              "selected_tokens": 57,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.713,
+              "evidence_source_ids": [
+                "b09",
+                "b07",
+                "b08",
+                "b13"
+              ]
+            }
+          }
+        },
+        {
+          "id": "shipping-weight",
+          "split": "dev",
+          "category": "direct",
+          "modes": {
+            "keyword": {
+              "recall_at_1": 0.5,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "reciprocal_rank": 1.0,
+              "first_relevant_rank": 1,
+              "selected_count": 3,
+              "selected_tokens": 38,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.387,
+              "evidence_source_ids": [
+                "b12",
+                "b13",
+                "b43"
+              ]
+            },
+            "graph": {
+              "recall_at_1": 0.5,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "reciprocal_rank": 1.0,
+              "first_relevant_rank": 1,
+              "selected_count": 5,
+              "selected_tokens": 63,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.768,
+              "evidence_source_ids": [
+                "b12",
+                "b13",
+                "b43",
+                "b16",
+                "b17"
+              ]
+            },
+            "budget": {
+              "recall_at_1": 0.5,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "reciprocal_rank": 1.0,
+              "first_relevant_rank": 1,
+              "selected_count": 5,
+              "selected_tokens": 63,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.754,
+              "evidence_source_ids": [
+                "b12",
+                "b13",
+                "b43",
+                "b16",
+                "b17"
+              ]
+            }
+          }
+        },
+        {
+          "id": "apprentice-days",
+          "split": "dev",
+          "category": "direct",
+          "modes": {
+            "keyword": {
+              "recall_at_1": 0.5,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "reciprocal_rank": 1.0,
+              "first_relevant_rank": 1,
+              "selected_count": 3,
+              "selected_tokens": 35,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.386,
+              "evidence_source_ids": [
+                "b14",
+                "b15",
+                "b44"
+              ]
+            },
+            "graph": {
+              "recall_at_1": 0.5,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "reciprocal_rank": 1.0,
+              "first_relevant_rank": 1,
+              "selected_count": 5,
+              "selected_tokens": 62,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.725,
+              "evidence_source_ids": [
+                "b14",
+                "b15",
+                "b44",
+                "b18",
+                "b19"
+              ]
+            },
+            "budget": {
+              "recall_at_1": 0.5,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "reciprocal_rank": 1.0,
+              "first_relevant_rank": 1,
+              "selected_count": 5,
+              "selected_tokens": 62,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.712,
+              "evidence_source_ids": [
+                "b14",
+                "b15",
+                "b44",
+                "b18",
+                "b19"
+              ]
+            }
+          }
+        },
+        {
+          "id": "poster-color",
+          "split": "dev",
+          "category": "direct",
+          "modes": {
+            "keyword": {
+              "recall_at_1": 0.5,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "reciprocal_rank": 1.0,
+              "first_relevant_rank": 1,
+              "selected_count": 3,
+              "selected_tokens": 37,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.383,
+              "evidence_source_ids": [
+                "b16",
+                "b17",
+                "b43"
+              ]
+            },
+            "graph": {
+              "recall_at_1": 0.5,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "reciprocal_rank": 1.0,
+              "first_relevant_rank": 1,
+              "selected_count": 3,
+              "selected_tokens": 37,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.711,
+              "evidence_source_ids": [
+                "b16",
+                "b17",
+                "b43"
+              ]
+            },
+            "budget": {
+              "recall_at_1": 0.5,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "reciprocal_rank": 1.0,
+              "first_relevant_rank": 1,
+              "selected_count": 3,
+              "selected_tokens": 37,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.691,
+              "evidence_source_ids": [
+                "b16",
+                "b17",
+                "b43"
+              ]
+            }
+          }
+        },
+        {
+          "id": "rent-due",
+          "split": "dev",
+          "category": "direct",
+          "modes": {
+            "keyword": {
+              "recall_at_1": 0.5,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "reciprocal_rank": 1.0,
+              "first_relevant_rank": 1,
+              "selected_count": 8,
+              "selected_tokens": 99,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.488,
+              "evidence_source_ids": [
+                "b18",
+                "b19",
+                "b44",
+                "b02",
+                "b11",
+                "b24",
+                "b25",
+                "b08"
+              ]
+            },
+            "graph": {
+              "recall_at_1": 0.5,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "reciprocal_rank": 1.0,
+              "first_relevant_rank": 1,
+              "selected_count": 10,
+              "selected_tokens": 112,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.858,
+              "evidence_source_ids": [
+                "b18",
+                "b19",
+                "b44",
+                "b09",
+                "b03",
+                "b02",
+                "b11",
+                "b24"
+              ]
+            },
+            "budget": {
+              "recall_at_1": 0.5,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "reciprocal_rank": 1.0,
+              "first_relevant_rank": 1,
+              "selected_count": 7,
+              "selected_tokens": 76,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.864,
+              "evidence_source_ids": [
+                "b18",
+                "b19",
+                "b44",
+                "b09",
+                "b03"
+              ]
+            }
+          }
+        },
+        {
+          "id": "membership-before",
+          "split": "dev",
+          "category": "direct",
+          "modes": {
+            "keyword": {
+              "recall_at_1": 0.0,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "reciprocal_rank": 0.5,
+              "first_relevant_rank": 2,
+              "selected_count": 4,
+              "selected_tokens": 40,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.428,
+              "evidence_source_ids": [
+                "b40",
+                "b20",
+                "b21"
+              ]
+            },
+            "graph": {
+              "recall_at_1": 0.0,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "reciprocal_rank": 0.5,
+              "first_relevant_rank": 2,
+              "selected_count": 4,
+              "selected_tokens": 40,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.706,
+              "evidence_source_ids": [
+                "b40",
+                "b20",
+                "b21"
+              ]
+            },
+            "budget": {
+              "recall_at_1": 0.0,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "reciprocal_rank": 0.5,
+              "first_relevant_rank": 2,
+              "selected_count": 4,
+              "selected_tokens": 40,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.688,
+              "evidence_source_ids": [
+                "b40",
+                "b20",
+                "b21"
+              ]
+            }
+          }
+        },
+        {
+          "id": "raku-date",
+          "split": "dev",
+          "category": "direct",
+          "modes": {
+            "keyword": {
+              "recall_at_1": 0.5,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "reciprocal_rank": 1.0,
+              "first_relevant_rank": 1,
+              "selected_count": 4,
+              "selected_tokens": 48,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.403,
+              "evidence_source_ids": [
+                "b22",
+                "b23",
+                "b32",
+                "b33"
+              ]
+            },
+            "graph": {
+              "recall_at_1": 0.5,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "reciprocal_rank": 1.0,
+              "first_relevant_rank": 1,
+              "selected_count": 4,
+              "selected_tokens": 48,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.688,
+              "evidence_source_ids": [
+                "b22",
+                "b23",
+                "b32",
+                "b33"
+              ]
+            },
+            "budget": {
+              "recall_at_1": 0.5,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "reciprocal_rank": 1.0,
+              "first_relevant_rank": 1,
+              "selected_count": 4,
+              "selected_tokens": 48,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.667,
+              "evidence_source_ids": [
+                "b22",
+                "b23",
+                "b32",
+                "b33"
+              ]
+            }
+          }
+        },
+        {
+          "id": "cabinet-code",
+          "split": "dev",
+          "category": "direct",
+          "modes": {
+            "keyword": {
+              "recall_at_1": 0.5,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "reciprocal_rank": 1.0,
+              "first_relevant_rank": 1,
+              "selected_count": 2,
+              "selected_tokens": 24,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.37,
+              "evidence_source_ids": [
+                "b24",
+                "b25"
+              ]
+            },
+            "graph": {
+              "recall_at_1": 0.5,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "reciprocal_rank": 1.0,
+              "first_relevant_rank": 1,
+              "selected_count": 2,
+              "selected_tokens": 24,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.654,
+              "evidence_source_ids": [
+                "b24",
+                "b25"
+              ]
+            },
+            "budget": {
+              "recall_at_1": 0.5,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "reciprocal_rank": 1.0,
+              "first_relevant_rank": 1,
+              "selected_count": 2,
+              "selected_tokens": 24,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.659,
+              "evidence_source_ids": [
+                "b24",
+                "b25"
+              ]
+            }
+          }
+        },
+        {
+          "id": "tea-before",
+          "split": "dev",
+          "category": "direct",
+          "modes": {
+            "keyword": {
+              "recall_at_1": 0.0,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "reciprocal_rank": 0.3333,
+              "first_relevant_rank": 3,
+              "selected_count": 4,
+              "selected_tokens": 41,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.423,
+              "evidence_source_ids": [
+                "b42",
+                "b38",
+                "b39"
+              ]
+            },
+            "graph": {
+              "recall_at_1": 0.0,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "reciprocal_rank": 0.3333,
+              "first_relevant_rank": 3,
+              "selected_count": 4,
+              "selected_tokens": 41,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.695,
+              "evidence_source_ids": [
+                "b42",
+                "b38",
+                "b39"
+              ]
+            },
+            "budget": {
+              "recall_at_1": 0.0,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "reciprocal_rank": 0.3333,
+              "first_relevant_rank": 3,
+              "selected_count": 4,
+              "selected_tokens": 41,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.688,
+              "evidence_source_ids": [
+                "b42",
+                "b38",
+                "b39"
+              ]
+            }
+          }
+        },
+        {
+          "id": "kiln-para",
+          "split": "dev",
+          "category": "paraphrase",
+          "modes": {
+            "keyword": {
+              "recall_at_1": 0.0,
+              "recall_at_5": 0.0,
+              "recall_at_10": 0.0,
+              "reciprocal_rank": 0.0,
+              "first_relevant_rank": null,
+              "selected_count": 0,
+              "selected_tokens": 0,
+              "budget_violation": false,
+              "empty": true,
+              "latency_ms": 0.334,
+              "evidence_source_ids": []
+            },
+            "graph": {
+              "recall_at_1": 0.0,
+              "recall_at_5": 0.0,
+              "recall_at_10": 0.0,
+              "reciprocal_rank": 0.0,
+              "first_relevant_rank": null,
+              "selected_count": 0,
+              "selected_tokens": 0,
+              "budget_violation": false,
+              "empty": true,
+              "latency_ms": 0.595,
+              "evidence_source_ids": []
+            },
+            "budget": {
+              "recall_at_1": 0.0,
+              "recall_at_5": 0.0,
+              "recall_at_10": 0.0,
+              "reciprocal_rank": 0.0,
+              "first_relevant_rank": null,
+              "selected_count": 0,
+              "selected_tokens": 0,
+              "budget_violation": false,
+              "empty": true,
+              "latency_ms": 0.718,
+              "evidence_source_ids": []
+            }
+          }
+        },
+        {
+          "id": "gallery-para",
+          "split": "dev",
+          "category": "paraphrase",
+          "modes": {
+            "keyword": {
+              "recall_at_1": 0.0,
+              "recall_at_5": 0.0,
+              "recall_at_10": 0.0,
+              "reciprocal_rank": 0.0,
+              "first_relevant_rank": null,
+              "selected_count": 0,
+              "selected_tokens": 0,
+              "budget_violation": false,
+              "empty": true,
+              "latency_ms": 0.394,
+              "evidence_source_ids": []
+            },
+            "graph": {
+              "recall_at_1": 0.0,
+              "recall_at_5": 0.0,
+              "recall_at_10": 0.0,
+              "reciprocal_rank": 0.0,
+              "first_relevant_rank": null,
+              "selected_count": 0,
+              "selected_tokens": 0,
+              "budget_violation": false,
+              "empty": true,
+              "latency_ms": 0.624,
+              "evidence_source_ids": []
+            },
+            "budget": {
+              "recall_at_1": 0.0,
+              "recall_at_5": 0.0,
+              "recall_at_10": 0.0,
+              "reciprocal_rank": 0.0,
+              "first_relevant_rank": null,
+              "selected_count": 0,
+              "selected_tokens": 0,
+              "budget_violation": false,
+              "empty": true,
+              "latency_ms": 0.619,
+              "evidence_source_ids": []
+            }
+          }
+        },
+        {
+          "id": "clay-para",
+          "split": "dev",
+          "category": "paraphrase",
+          "modes": {
+            "keyword": {
+              "recall_at_1": 0.0,
+              "recall_at_5": 0.0,
+              "recall_at_10": 0.0,
+              "reciprocal_rank": 0.0,
+              "first_relevant_rank": null,
+              "selected_count": 0,
+              "selected_tokens": 0,
+              "budget_violation": false,
+              "empty": true,
+              "latency_ms": 0.338,
+              "evidence_source_ids": []
+            },
+            "graph": {
+              "recall_at_1": 0.0,
+              "recall_at_5": 0.0,
+              "recall_at_10": 0.0,
+              "reciprocal_rank": 0.0,
+              "first_relevant_rank": null,
+              "selected_count": 0,
+              "selected_tokens": 0,
+              "budget_violation": false,
+              "empty": true,
+              "latency_ms": 0.597,
+              "evidence_source_ids": []
+            },
+            "budget": {
+              "recall_at_1": 0.0,
+              "recall_at_5": 0.0,
+              "recall_at_10": 0.0,
+              "reciprocal_rank": 0.0,
+              "first_relevant_rank": null,
+              "selected_count": 0,
+              "selected_tokens": 0,
+              "budget_violation": false,
+              "empty": true,
+              "latency_ms": 0.59,
+              "evidence_source_ids": []
+            }
+          }
+        },
+        {
+          "id": "shipping-para",
+          "split": "dev",
+          "category": "paraphrase",
+          "modes": {
+            "keyword": {
+              "recall_at_1": 0.0,
+              "recall_at_5": 0.0,
+              "recall_at_10": 0.0,
+              "reciprocal_rank": 0.0,
+              "first_relevant_rank": null,
+              "selected_count": 0,
+              "selected_tokens": 0,
+              "budget_violation": false,
+              "empty": true,
+              "latency_ms": 0.335,
+              "evidence_source_ids": []
+            },
+            "graph": {
+              "recall_at_1": 0.0,
+              "recall_at_5": 0.0,
+              "recall_at_10": 0.0,
+              "reciprocal_rank": 0.0,
+              "first_relevant_rank": null,
+              "selected_count": 0,
+              "selected_tokens": 0,
+              "budget_violation": false,
+              "empty": true,
+              "latency_ms": 0.599,
+              "evidence_source_ids": []
+            },
+            "budget": {
+              "recall_at_1": 0.0,
+              "recall_at_5": 0.0,
+              "recall_at_10": 0.0,
+              "reciprocal_rank": 0.0,
+              "first_relevant_rank": null,
+              "selected_count": 0,
+              "selected_tokens": 0,
+              "budget_violation": false,
+              "empty": true,
+              "latency_ms": 0.591,
+              "evidence_source_ids": []
+            }
+          }
+        },
+        {
+          "id": "apprentice-para",
+          "split": "dev",
+          "category": "paraphrase",
+          "modes": {
+            "keyword": {
+              "recall_at_1": 0.0,
+              "recall_at_5": 0.0,
+              "recall_at_10": 0.0,
+              "reciprocal_rank": 0.0,
+              "first_relevant_rank": null,
+              "selected_count": 0,
+              "selected_tokens": 0,
+              "budget_violation": false,
+              "empty": true,
+              "latency_ms": 0.323,
+              "evidence_source_ids": []
+            },
+            "graph": {
+              "recall_at_1": 0.0,
+              "recall_at_5": 0.0,
+              "recall_at_10": 0.0,
+              "reciprocal_rank": 0.0,
+              "first_relevant_rank": null,
+              "selected_count": 0,
+              "selected_tokens": 0,
+              "budget_violation": false,
+              "empty": true,
+              "latency_ms": 0.621,
+              "evidence_source_ids": []
+            },
+            "budget": {
+              "recall_at_1": 0.0,
+              "recall_at_5": 0.0,
+              "recall_at_10": 0.0,
+              "reciprocal_rank": 0.0,
+              "first_relevant_rank": null,
+              "selected_count": 0,
+              "selected_tokens": 0,
+              "budget_violation": false,
+              "empty": true,
+              "latency_ms": 0.6,
+              "evidence_source_ids": []
+            }
+          }
+        },
+        {
+          "id": "poster-para",
+          "split": "dev",
+          "category": "paraphrase",
+          "modes": {
+            "keyword": {
+              "recall_at_1": 0.0,
+              "recall_at_5": 0.0,
+              "recall_at_10": 0.0,
+              "reciprocal_rank": 0.0,
+              "first_relevant_rank": null,
+              "selected_count": 0,
+              "selected_tokens": 0,
+              "budget_violation": false,
+              "empty": true,
+              "latency_ms": 0.326,
+              "evidence_source_ids": []
+            },
+            "graph": {
+              "recall_at_1": 0.0,
+              "recall_at_5": 0.0,
+              "recall_at_10": 0.0,
+              "reciprocal_rank": 0.0,
+              "first_relevant_rank": null,
+              "selected_count": 0,
+              "selected_tokens": 0,
+              "budget_violation": false,
+              "empty": true,
+              "latency_ms": 0.583,
+              "evidence_source_ids": []
+            },
+            "budget": {
+              "recall_at_1": 0.0,
+              "recall_at_5": 0.0,
+              "recall_at_10": 0.0,
+              "reciprocal_rank": 0.0,
+              "first_relevant_rank": null,
+              "selected_count": 0,
+              "selected_tokens": 0,
+              "budget_violation": false,
+              "empty": true,
+              "latency_ms": 0.606,
+              "evidence_source_ids": []
+            }
+          }
+        },
+        {
+          "id": "rent-para",
+          "split": "dev",
+          "category": "paraphrase",
+          "modes": {
+            "keyword": {
+              "recall_at_1": 0.5,
+              "recall_at_5": 0.5,
+              "recall_at_10": 0.5,
+              "reciprocal_rank": 1.0,
+              "first_relevant_rank": 1,
+              "selected_count": 1,
+              "selected_tokens": 15,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.365,
+              "evidence_source_ids": [
+                "b19"
+              ]
+            },
+            "graph": {
+              "recall_at_1": 0.5,
+              "recall_at_5": 0.5,
+              "recall_at_10": 0.5,
+              "reciprocal_rank": 1.0,
+              "first_relevant_rank": 1,
+              "selected_count": 1,
+              "selected_tokens": 15,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.629,
+              "evidence_source_ids": [
+                "b19"
+              ]
+            },
+            "budget": {
+              "recall_at_1": 0.5,
+              "recall_at_5": 0.5,
+              "recall_at_10": 0.5,
+              "reciprocal_rank": 1.0,
+              "first_relevant_rank": 1,
+              "selected_count": 1,
+              "selected_tokens": 15,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.662,
+              "evidence_source_ids": [
+                "b19"
+              ]
+            }
+          }
+        },
+        {
+          "id": "membership-para",
+          "split": "dev",
+          "category": "paraphrase",
+          "modes": {
+            "keyword": {
+              "recall_at_1": 0.0,
+              "recall_at_5": 0.0,
+              "recall_at_10": 0.0,
+              "reciprocal_rank": 0.0,
+              "first_relevant_rank": null,
+              "selected_count": 0,
+              "selected_tokens": 0,
+              "budget_violation": false,
+              "empty": true,
+              "latency_ms": 0.324,
+              "evidence_source_ids": []
+            },
+            "graph": {
+              "recall_at_1": 0.0,
+              "recall_at_5": 0.0,
+              "recall_at_10": 0.0,
+              "reciprocal_rank": 0.0,
+              "first_relevant_rank": null,
+              "selected_count": 0,
+              "selected_tokens": 0,
+              "budget_violation": false,
+              "empty": true,
+              "latency_ms": 0.58,
+              "evidence_source_ids": []
+            },
+            "budget": {
+              "recall_at_1": 0.0,
+              "recall_at_5": 0.0,
+              "recall_at_10": 0.0,
+              "reciprocal_rank": 0.0,
+              "first_relevant_rank": null,
+              "selected_count": 0,
+              "selected_tokens": 0,
+              "budget_violation": false,
+              "empty": true,
+              "latency_ms": 0.572,
+              "evidence_source_ids": []
+            }
+          }
+        },
+        {
+          "id": "poster-invite",
+          "split": "dev",
+          "category": "related",
+          "modes": {
+            "keyword": {
+              "recall_at_1": 0.5,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "reciprocal_rank": 1.0,
+              "first_relevant_rank": 1,
+              "selected_count": 3,
+              "selected_tokens": 37,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.425,
+              "evidence_source_ids": [
+                "b17",
+                "b16",
+                "b43"
+              ]
+            },
+            "graph": {
+              "recall_at_1": 0.5,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "reciprocal_rank": 1.0,
+              "first_relevant_rank": 1,
+              "selected_count": 3,
+              "selected_tokens": 37,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.734,
+              "evidence_source_ids": [
+                "b17",
+                "b16",
+                "b43"
+              ]
+            },
+            "budget": {
+              "recall_at_1": 0.5,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "reciprocal_rank": 1.0,
+              "first_relevant_rank": 1,
+              "selected_count": 3,
+              "selected_tokens": 37,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.719,
+              "evidence_source_ids": [
+                "b17",
+                "b16",
+                "b43"
+              ]
+            }
+          }
+        },
+        {
+          "id": "exit-kiln",
+          "split": "dev",
+          "category": "related",
+          "modes": {
+            "keyword": {
+              "recall_at_1": 0.5,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "reciprocal_rank": 1.0,
+              "first_relevant_rank": 1,
+              "selected_count": 7,
+              "selected_tokens": 79,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.489,
+              "evidence_source_ids": [
+                "b37",
+                "b36",
+                "b03",
+                "b01",
+                "b02",
+                "b10"
+              ]
+            },
+            "graph": {
+              "recall_at_1": 0.5,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "reciprocal_rank": 1.0,
+              "first_relevant_rank": 1,
+              "selected_count": 7,
+              "selected_tokens": 79,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.835,
+              "evidence_source_ids": [
+                "b37",
+                "b36",
+                "b03",
+                "b01",
+                "b02",
+                "b10"
+              ]
+            },
+            "budget": {
+              "recall_at_1": 0.5,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "reciprocal_rank": 1.0,
+              "first_relevant_rank": 1,
+              "selected_count": 7,
+              "selected_tokens": 79,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.787,
+              "evidence_source_ids": [
+                "b37",
+                "b36",
+                "b03",
+                "b01",
+                "b02",
+                "b10"
+              ]
+            }
+          }
+        },
+        {
+          "id": "booth-catalog",
+          "split": "dev",
+          "category": "related",
+          "modes": {
+            "keyword": {
+              "recall_at_1": 0.5,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "reciprocal_rank": 1.0,
+              "first_relevant_rank": 1,
+              "selected_count": 4,
+              "selected_tokens": 42,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.504,
+              "evidence_source_ids": [
+                "b27",
+                "b41",
+                "b26"
+              ]
+            },
+            "graph": {
+              "recall_at_1": 0.5,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "reciprocal_rank": 1.0,
+              "first_relevant_rank": 1,
+              "selected_count": 4,
+              "selected_tokens": 42,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.715,
+              "evidence_source_ids": [
+                "b27",
+                "b41",
+                "b26"
+              ]
+            },
+            "budget": {
+              "recall_at_1": 0.5,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "reciprocal_rank": 1.0,
+              "first_relevant_rank": 1,
+              "selected_count": 4,
+              "selected_tokens": 42,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.722,
+              "evidence_source_ids": [
+                "b27",
+                "b41",
+                "b26"
+              ]
+            }
+          }
+        },
+        {
+          "id": "bronze-course",
+          "split": "dev",
+          "category": "related",
+          "modes": {
+            "keyword": {
+              "recall_at_1": 0.5,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "reciprocal_rank": 1.0,
+              "first_relevant_rank": 1,
+              "selected_count": 3,
+              "selected_tokens": 37,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.426,
+              "evidence_source_ids": [
+                "b31",
+                "b30",
+                "b15"
+              ]
+            },
+            "graph": {
+              "recall_at_1": 0.5,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "reciprocal_rank": 1.0,
+              "first_relevant_rank": 1,
+              "selected_count": 6,
+              "selected_tokens": 75,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.706,
+              "evidence_source_ids": [
+                "b31",
+                "b30",
+                "b18",
+                "b19",
+                "b44",
+                "b15"
+              ]
+            },
+            "budget": {
+              "recall_at_1": 0.5,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "reciprocal_rank": 1.0,
+              "first_relevant_rank": 1,
+              "selected_count": 6,
+              "selected_tokens": 75,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.707,
+              "evidence_source_ids": [
+                "b31",
+                "b30",
+                "b18",
+                "b19",
+                "b44",
+                "b15"
+              ]
+            }
+          }
+        },
+        {
+          "id": "patio-seconds",
+          "split": "dev",
+          "category": "related",
+          "modes": {
+            "keyword": {
+              "recall_at_1": 0.5,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "reciprocal_rank": 1.0,
+              "first_relevant_rank": 1,
+              "selected_count": 4,
+              "selected_tokens": 48,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.453,
+              "evidence_source_ids": [
+                "b33",
+                "b32",
+                "b22",
+                "b23"
+              ]
+            },
+            "graph": {
+              "recall_at_1": 0.5,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "reciprocal_rank": 1.0,
+              "first_relevant_rank": 1,
+              "selected_count": 4,
+              "selected_tokens": 48,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.694,
+              "evidence_source_ids": [
+                "b33",
+                "b32",
+                "b22",
+                "b23"
+              ]
+            },
+            "budget": {
+              "recall_at_1": 0.5,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "reciprocal_rank": 1.0,
+              "first_relevant_rank": 1,
+              "selected_count": 4,
+              "selected_tokens": 48,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.679,
+              "evidence_source_ids": [
+                "b33",
+                "b32",
+                "b22",
+                "b23"
+              ]
+            }
+          }
+        },
+        {
+          "id": "kiln-now",
+          "split": "dev",
+          "category": "superseded",
+          "modes": {
+            "keyword": {
+              "recall_at_1": 1.0,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "reciprocal_rank": 1.0,
+              "first_relevant_rank": 1,
+              "selected_count": 6,
+              "selected_tokens": 68,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.467,
+              "evidence_source_ids": [
+                "b03",
+                "b01",
+                "b02",
+                "b10",
+                "b37"
+              ]
+            },
+            "graph": {
+              "recall_at_1": 1.0,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "reciprocal_rank": 1.0,
+              "first_relevant_rank": 1,
+              "selected_count": 6,
+              "selected_tokens": 68,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.763,
+              "evidence_source_ids": [
+                "b03",
+                "b01",
+                "b02",
+                "b10",
+                "b37"
+              ]
+            },
+            "budget": {
+              "recall_at_1": 1.0,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "reciprocal_rank": 1.0,
+              "first_relevant_rank": 1,
+              "selected_count": 6,
+              "selected_tokens": 68,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.75,
+              "evidence_source_ids": [
+                "b03",
+                "b01",
+                "b02",
+                "b10",
+                "b37"
+              ]
+            }
+          }
+        },
+        {
+          "id": "gallery-now",
+          "split": "dev",
+          "category": "superseded",
+          "modes": {
+            "keyword": {
+              "recall_at_1": 1.0,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "reciprocal_rank": 1.0,
+              "first_relevant_rank": 1,
+              "selected_count": 4,
+              "selected_tokens": 40,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.413,
+              "evidence_source_ids": [
+                "b06",
+                "b04",
+                "b05"
+              ]
+            },
+            "graph": {
+              "recall_at_1": 1.0,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "reciprocal_rank": 1.0,
+              "first_relevant_rank": 1,
+              "selected_count": 4,
+              "selected_tokens": 40,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.666,
+              "evidence_source_ids": [
+                "b06",
+                "b04",
+                "b05"
+              ]
+            },
+            "budget": {
+              "recall_at_1": 1.0,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "reciprocal_rank": 1.0,
+              "first_relevant_rank": 1,
+              "selected_count": 4,
+              "selected_tokens": 40,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.663,
+              "evidence_source_ids": [
+                "b06",
+                "b04",
+                "b05"
+              ]
+            }
+          }
+        },
+        {
+          "id": "clay-now",
+          "split": "dev",
+          "category": "contradiction",
+          "modes": {
+            "keyword": {
+              "recall_at_1": 1.0,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "reciprocal_rank": 1.0,
+              "first_relevant_rank": 1,
+              "selected_count": 5,
+              "selected_tokens": 57,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.429,
+              "evidence_source_ids": [
+                "b09",
+                "b07",
+                "b08",
+                "b13"
+              ]
+            },
+            "graph": {
+              "recall_at_1": 1.0,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "reciprocal_rank": 1.0,
+              "first_relevant_rank": 1,
+              "selected_count": 5,
+              "selected_tokens": 57,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.703,
+              "evidence_source_ids": [
+                "b09",
+                "b07",
+                "b08",
+                "b13"
+              ]
+            },
+            "budget": {
+              "recall_at_1": 1.0,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "reciprocal_rank": 1.0,
+              "first_relevant_rank": 1,
+              "selected_count": 5,
+              "selected_tokens": 57,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.69,
+              "evidence_source_ids": [
+                "b09",
+                "b07",
+                "b08",
+                "b13"
+              ]
+            }
+          }
+        },
+        {
+          "id": "booth-now",
+          "split": "dev",
+          "category": "contradiction",
+          "modes": {
+            "keyword": {
+              "recall_at_1": 1.0,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "reciprocal_rank": 1.0,
+              "first_relevant_rank": 1,
+              "selected_count": 4,
+              "selected_tokens": 42,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.409,
+              "evidence_source_ids": [
+                "b41",
+                "b26",
+                "b27"
+              ]
+            },
+            "graph": {
+              "recall_at_1": 1.0,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "reciprocal_rank": 1.0,
+              "first_relevant_rank": 1,
+              "selected_count": 4,
+              "selected_tokens": 42,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.697,
+              "evidence_source_ids": [
+                "b41",
+                "b26",
+                "b27"
+              ]
+            },
+            "budget": {
+              "recall_at_1": 1.0,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "reciprocal_rank": 1.0,
+              "first_relevant_rank": 1,
+              "selected_count": 4,
+              "selected_tokens": 42,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.684,
+              "evidence_source_ids": [
+                "b41",
+                "b26",
+                "b27"
+              ]
+            }
+          }
+        },
+        {
+          "id": "glaze-depend",
+          "split": "dev",
+          "category": "dependency",
+          "modes": {
+            "keyword": {
+              "recall_at_1": 0.5,
+              "recall_at_5": 0.5,
+              "recall_at_10": 0.5,
+              "reciprocal_rank": 1.0,
+              "first_relevant_rank": 1,
+              "selected_count": 2,
+              "selected_tokens": 22,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.367,
+              "evidence_source_ids": [
+                "b10",
+                "b11"
+              ]
+            },
+            "graph": {
+              "recall_at_1": 0.5,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "reciprocal_rank": 1.0,
+              "first_relevant_rank": 1,
+              "selected_count": 6,
+              "selected_tokens": 65,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.75,
+              "evidence_source_ids": [
+                "b10",
+                "b11",
+                "b03",
+                "b01",
+                "b02"
+              ]
+            },
+            "budget": {
+              "recall_at_1": 0.5,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "reciprocal_rank": 1.0,
+              "first_relevant_rank": 1,
+              "selected_count": 6,
+              "selected_tokens": 65,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.734,
+              "evidence_source_ids": [
+                "b10",
+                "b11",
+                "b03",
+                "b01",
+                "b02"
+              ]
+            }
+          }
+        },
+        {
+          "id": "ship-depend",
+          "split": "dev",
+          "category": "dependency",
+          "modes": {
+            "keyword": {
+              "recall_at_1": 0.0,
+              "recall_at_5": 0.5,
+              "recall_at_10": 0.5,
+              "reciprocal_rank": 0.3333,
+              "first_relevant_rank": 3,
+              "selected_count": 3,
+              "selected_tokens": 38,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.389,
+              "evidence_source_ids": [
+                "b12",
+                "b13",
+                "b43"
+              ]
+            },
+            "graph": {
+              "recall_at_1": 0.0,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "reciprocal_rank": 0.3333,
+              "first_relevant_rank": 3,
+              "selected_count": 5,
+              "selected_tokens": 63,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.948,
+              "evidence_source_ids": [
+                "b12",
+                "b13",
+                "b43",
+                "b16",
+                "b17"
+              ]
+            },
+            "budget": {
+              "recall_at_1": 0.0,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "reciprocal_rank": 0.3333,
+              "first_relevant_rank": 3,
+              "selected_count": 5,
+              "selected_tokens": 63,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.79,
+              "evidence_source_ids": [
+                "b12",
+                "b13",
+                "b43",
+                "b16",
+                "b17"
+              ]
+            }
+          }
+        },
+        {
+          "id": "glaze-temp",
+          "split": "dev",
+          "category": "dependency",
+          "modes": {
+            "keyword": {
+              "recall_at_1": 0.5,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "reciprocal_rank": 1.0,
+              "first_relevant_rank": 1,
+              "selected_count": 7,
+              "selected_tokens": 79,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.517,
+              "evidence_source_ids": [
+                "b10",
+                "b03",
+                "b01",
+                "b02",
+                "b11",
+                "b37"
+              ]
+            },
+            "graph": {
+              "recall_at_1": 0.5,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "reciprocal_rank": 1.0,
+              "first_relevant_rank": 1,
+              "selected_count": 7,
+              "selected_tokens": 79,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.808,
+              "evidence_source_ids": [
+                "b10",
+                "b03",
+                "b01",
+                "b02",
+                "b11",
+                "b37"
+              ]
+            },
+            "budget": {
+              "recall_at_1": 0.5,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "reciprocal_rank": 1.0,
+              "first_relevant_rank": 1,
+              "selected_count": 7,
+              "selected_tokens": 79,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.801,
+              "evidence_source_ids": [
+                "b10",
+                "b03",
+                "b01",
+                "b02",
+                "b11",
+                "b37"
+              ]
+            }
+          }
+        },
+        {
+          "id": "wifi",
+          "split": "dev",
+          "category": "unanswerable",
+          "modes": {
+            "keyword": {
+              "recall_at_1": null,
+              "recall_at_5": null,
+              "recall_at_10": null,
+              "reciprocal_rank": null,
+              "first_relevant_rank": null,
+              "selected_count": 0,
+              "selected_tokens": 0,
+              "budget_violation": false,
+              "empty": true,
+              "latency_ms": 0.347,
+              "evidence_source_ids": []
+            },
+            "graph": {
+              "recall_at_1": null,
+              "recall_at_5": null,
+              "recall_at_10": null,
+              "reciprocal_rank": null,
+              "first_relevant_rank": null,
+              "selected_count": 0,
+              "selected_tokens": 0,
+              "budget_violation": false,
+              "empty": true,
+              "latency_ms": 0.595,
+              "evidence_source_ids": []
+            },
+            "budget": {
+              "recall_at_1": null,
+              "recall_at_5": null,
+              "recall_at_10": null,
+              "reciprocal_rank": null,
+              "first_relevant_rank": null,
+              "selected_count": 0,
+              "selected_tokens": 0,
+              "budget_violation": false,
+              "empty": true,
+              "latency_ms": 0.59,
+              "evidence_source_ids": []
+            }
+          }
+        },
+        {
+          "id": "parking",
+          "split": "dev",
+          "category": "unanswerable",
+          "modes": {
+            "keyword": {
+              "recall_at_1": null,
+              "recall_at_5": null,
+              "recall_at_10": null,
+              "reciprocal_rank": null,
+              "first_relevant_rank": null,
+              "selected_count": 0,
+              "selected_tokens": 0,
+              "budget_violation": false,
+              "empty": true,
+              "latency_ms": 0.316,
+              "evidence_source_ids": []
+            },
+            "graph": {
+              "recall_at_1": null,
+              "recall_at_5": null,
+              "recall_at_10": null,
+              "reciprocal_rank": null,
+              "first_relevant_rank": null,
+              "selected_count": 0,
+              "selected_tokens": 0,
+              "budget_violation": false,
+              "empty": true,
+              "latency_ms": 0.583,
+              "evidence_source_ids": []
+            },
+            "budget": {
+              "recall_at_1": null,
+              "recall_at_5": null,
+              "recall_at_10": null,
+              "reciprocal_rank": null,
+              "first_relevant_rank": null,
+              "selected_count": 0,
+              "selected_tokens": 0,
+              "budget_violation": false,
+              "empty": true,
+              "latency_ms": 0.575,
+              "evidence_source_ids": []
+            }
+          }
+        },
+        {
+          "id": "dogs",
+          "split": "dev",
+          "category": "unanswerable",
+          "modes": {
+            "keyword": {
+              "recall_at_1": null,
+              "recall_at_5": null,
+              "recall_at_10": null,
+              "reciprocal_rank": null,
+              "first_relevant_rank": null,
+              "selected_count": 8,
+              "selected_tokens": 99,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.474,
+              "evidence_source_ids": [
+                "b02",
+                "b11",
+                "b18",
+                "b19",
+                "b24",
+                "b25",
+                "b44",
+                "b08"
+              ]
+            },
+            "graph": {
+              "recall_at_1": null,
+              "recall_at_5": null,
+              "recall_at_10": null,
+              "reciprocal_rank": null,
+              "first_relevant_rank": null,
+              "selected_count": 10,
+              "selected_tokens": 113,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.858,
+              "evidence_source_ids": [
+                "b09",
+                "b03",
+                "b02",
+                "b11",
+                "b18",
+                "b19",
+                "b24",
+                "b25"
+              ]
+            },
+            "budget": {
+              "recall_at_1": null,
+              "recall_at_5": null,
+              "recall_at_10": null,
+              "reciprocal_rank": null,
+              "first_relevant_rank": null,
+              "selected_count": 7,
+              "selected_tokens": 74,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.821,
+              "evidence_source_ids": [
+                "b09",
+                "b03",
+                "b02",
+                "b11",
+                "b18"
+              ]
+            }
+          }
+        },
+        {
+          "id": "payroll",
+          "split": "dev",
+          "category": "unanswerable",
+          "modes": {
+            "keyword": {
+              "recall_at_1": null,
+              "recall_at_5": null,
+              "recall_at_10": null,
+              "reciprocal_rank": null,
+              "first_relevant_rank": null,
+              "selected_count": 0,
+              "selected_tokens": 0,
+              "budget_violation": false,
+              "empty": true,
+              "latency_ms": 0.334,
+              "evidence_source_ids": []
+            },
+            "graph": {
+              "recall_at_1": null,
+              "recall_at_5": null,
+              "recall_at_10": null,
+              "reciprocal_rank": null,
+              "first_relevant_rank": null,
+              "selected_count": 0,
+              "selected_tokens": 0,
+              "budget_violation": false,
+              "empty": true,
+              "latency_ms": 0.618,
+              "evidence_source_ids": []
+            },
+            "budget": {
+              "recall_at_1": null,
+              "recall_at_5": null,
+              "recall_at_10": null,
+              "reciprocal_rank": null,
+              "first_relevant_rank": null,
+              "selected_count": 0,
+              "selected_tokens": 0,
+              "budget_violation": false,
+              "empty": true,
+              "latency_ms": 0.605,
+              "evidence_source_ids": []
+            }
+          }
+        },
+        {
+          "id": "elevator",
+          "split": "dev",
+          "category": "unanswerable",
+          "modes": {
+            "keyword": {
+              "recall_at_1": null,
+              "recall_at_5": null,
+              "recall_at_10": null,
+              "reciprocal_rank": null,
+              "first_relevant_rank": null,
+              "selected_count": 0,
+              "selected_tokens": 0,
+              "budget_violation": false,
+              "empty": true,
+              "latency_ms": 0.328,
+              "evidence_source_ids": []
+            },
+            "graph": {
+              "recall_at_1": null,
+              "recall_at_5": null,
+              "recall_at_10": null,
+              "reciprocal_rank": null,
+              "first_relevant_rank": null,
+              "selected_count": 0,
+              "selected_tokens": 0,
+              "budget_violation": false,
+              "empty": true,
+              "latency_ms": 0.586,
+              "evidence_source_ids": []
+            },
+            "budget": {
+              "recall_at_1": null,
+              "recall_at_5": null,
+              "recall_at_10": null,
+              "reciprocal_rank": null,
+              "first_relevant_rank": null,
+              "selected_count": 0,
+              "selected_tokens": 0,
+              "budget_violation": false,
+              "empty": true,
+              "latency_ms": 0.596,
+              "evidence_source_ids": []
+            }
+          }
+        },
+        {
+          "id": "piano",
+          "split": "dev",
+          "category": "unanswerable",
+          "modes": {
+            "keyword": {
+              "recall_at_1": null,
+              "recall_at_5": null,
+              "recall_at_10": null,
+              "reciprocal_rank": null,
+              "first_relevant_rank": null,
+              "selected_count": 0,
+              "selected_tokens": 0,
+              "budget_violation": false,
+              "empty": true,
+              "latency_ms": 0.319,
+              "evidence_source_ids": []
+            },
+            "graph": {
+              "recall_at_1": null,
+              "recall_at_5": null,
+              "recall_at_10": null,
+              "reciprocal_rank": null,
+              "first_relevant_rank": null,
+              "selected_count": 0,
+              "selected_tokens": 0,
+              "budget_violation": false,
+              "empty": true,
+              "latency_ms": 0.575,
+              "evidence_source_ids": []
+            },
+            "budget": {
+              "recall_at_1": null,
+              "recall_at_5": null,
+              "recall_at_10": null,
+              "reciprocal_rank": null,
+              "first_relevant_rank": null,
+              "selected_count": 0,
+              "selected_tokens": 0,
+              "budget_violation": false,
+              "empty": true,
+              "latency_ms": 0.584,
+              "evidence_source_ids": []
+            }
+          }
+        },
+        {
+          "id": "insurance",
+          "split": "dev",
+          "category": "unanswerable",
+          "modes": {
+            "keyword": {
+              "recall_at_1": null,
+              "recall_at_5": null,
+              "recall_at_10": null,
+              "reciprocal_rank": null,
+              "first_relevant_rank": null,
+              "selected_count": 0,
+              "selected_tokens": 0,
+              "budget_violation": false,
+              "empty": true,
+              "latency_ms": 0.315,
+              "evidence_source_ids": []
+            },
+            "graph": {
+              "recall_at_1": null,
+              "recall_at_5": null,
+              "recall_at_10": null,
+              "reciprocal_rank": null,
+              "first_relevant_rank": null,
+              "selected_count": 0,
+              "selected_tokens": 0,
+              "budget_violation": false,
+              "empty": true,
+              "latency_ms": 0.58,
+              "evidence_source_ids": []
+            },
+            "budget": {
+              "recall_at_1": null,
+              "recall_at_5": null,
+              "recall_at_10": null,
+              "reciprocal_rank": null,
+              "first_relevant_rank": null,
+              "selected_count": 0,
+              "selected_tokens": 0,
+              "budget_violation": false,
+              "empty": true,
+              "latency_ms": 0.578,
+              "evidence_source_ids": []
+            }
+          }
+        },
+        {
+          "id": "kiln-historical",
+          "split": "dev",
+          "category": "direct",
+          "modes": {
+            "keyword": {
+              "recall_at_1": 0.0,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "reciprocal_rank": 0.3333,
+              "first_relevant_rank": 3,
+              "selected_count": 8,
+              "selected_tokens": 95,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.51,
+              "evidence_source_ids": [
+                "b03",
+                "b01",
+                "b02",
+                "b10",
+                "b18",
+                "b19",
+                "b37"
+              ]
+            },
+            "graph": {
+              "recall_at_1": 0.0,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "reciprocal_rank": 0.3333,
+              "first_relevant_rank": 3,
+              "selected_count": 8,
+              "selected_tokens": 95,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.934,
+              "evidence_source_ids": [
+                "b03",
+                "b01",
+                "b02",
+                "b10",
+                "b18",
+                "b19",
+                "b37"
+              ]
+            },
+            "budget": {
+              "recall_at_1": 0.0,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "reciprocal_rank": 0.3333,
+              "first_relevant_rank": 3,
+              "selected_count": 7,
+              "selected_tokens": 80,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.841,
+              "evidence_source_ids": [
+                "b03",
+                "b01",
+                "b02",
+                "b10",
+                "b18",
+                "b37"
+              ]
+            }
+          }
+        },
+        {
+          "id": "rent-now-none",
+          "split": "dev",
+          "category": "unanswerable",
+          "modes": {
+            "keyword": {
+              "recall_at_1": null,
+              "recall_at_5": null,
+              "recall_at_10": null,
+              "reciprocal_rank": null,
+              "first_relevant_rank": null,
+              "selected_count": 8,
+              "selected_tokens": 99,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.493,
+              "evidence_source_ids": [
+                "b18",
+                "b19",
+                "b44",
+                "b02",
+                "b11",
+                "b24",
+                "b25",
+                "b08"
+              ]
+            },
+            "graph": {
+              "recall_at_1": null,
+              "recall_at_5": null,
+              "recall_at_10": null,
+              "reciprocal_rank": null,
+              "first_relevant_rank": null,
+              "selected_count": 10,
+              "selected_tokens": 112,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.818,
+              "evidence_source_ids": [
+                "b18",
+                "b19",
+                "b44",
+                "b09",
+                "b03",
+                "b02",
+                "b11",
+                "b24"
+              ]
+            },
+            "budget": {
+              "recall_at_1": null,
+              "recall_at_5": null,
+              "recall_at_10": null,
+              "reciprocal_rank": null,
+              "first_relevant_rank": null,
+              "selected_count": 7,
+              "selected_tokens": 76,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.818,
+              "evidence_source_ids": [
+                "b18",
+                "b19",
+                "b44",
+                "b09",
+                "b03"
+              ]
+            }
+          }
+        },
+        {
+          "id": "nora-role",
+          "split": "dev",
+          "category": "direct",
+          "modes": {
+            "keyword": {
+              "recall_at_1": 0.5,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "reciprocal_rank": 1.0,
+              "first_relevant_rank": 1,
+              "selected_count": 2,
+              "selected_tokens": 24,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.381,
+              "evidence_source_ids": [
+                "b28",
+                "b29"
+              ]
+            },
+            "graph": {
+              "recall_at_1": 0.5,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "reciprocal_rank": 1.0,
+              "first_relevant_rank": 1,
+              "selected_count": 2,
+              "selected_tokens": 24,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.637,
+              "evidence_source_ids": [
+                "b28",
+                "b29"
+              ]
+            },
+            "budget": {
+              "recall_at_1": 0.5,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "reciprocal_rank": 1.0,
+              "first_relevant_rank": 1,
+              "selected_count": 2,
+              "selected_tokens": 24,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.628,
+              "evidence_source_ids": [
+                "b28",
+                "b29"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "heldout": {
+      "question_count": 22,
+      "answerable_count": 19,
+      "unanswerable_count": 3,
+      "modes": {
+        "keyword": {
+          "sample_count": 22,
+          "answerable_denominator": 19,
+          "unanswerable_denominator": 3,
+          "recall_at_1": 0.3947,
+          "recall_at_5": 0.7632,
+          "recall_at_10": 0.7632,
+          "mrr": 0.7456,
+          "mean_selected_tokens": 29.8636,
+          "budget_violations": 0,
+          "empty_result_rate_answerable": 0.1579,
+          "empty_result_rate_unanswerable": 1.0,
+          "mean_latency_ms": 0.3983
+        },
+        "graph": {
+          "sample_count": 22,
+          "answerable_denominator": 19,
+          "unanswerable_denominator": 3,
+          "recall_at_1": 0.3684,
+          "recall_at_5": 0.7895,
+          "recall_at_10": 0.7895,
+          "mrr": 0.7193,
+          "mean_selected_tokens": 37.3182,
+          "budget_violations": 0,
+          "empty_result_rate_answerable": 0.1579,
+          "empty_result_rate_unanswerable": 1.0,
+          "mean_latency_ms": 0.6773
+        },
+        "budget": {
+          "sample_count": 22,
+          "answerable_denominator": 19,
+          "unanswerable_denominator": 3,
+          "recall_at_1": 0.3684,
+          "recall_at_5": 0.7895,
+          "recall_at_10": 0.7895,
+          "mrr": 0.7193,
+          "mean_selected_tokens": 34.9545,
+          "budget_violations": 0,
+          "empty_result_rate_answerable": 0.1579,
+          "empty_result_rate_unanswerable": 1.0,
+          "mean_latency_ms": 0.6881
+        }
+      },
+      "by_category": {
+        "keyword": {
+          "contradiction": {
+            "sample_count": 1,
+            "answerable_denominator": 1,
+            "unanswerable_denominator": 0,
+            "recall_at_1": 1.0,
+            "recall_at_5": 1.0,
+            "recall_at_10": 1.0,
+            "mrr": 1.0,
+            "mean_selected_tokens": 41.0,
+            "budget_violations": 0,
+            "empty_result_rate_answerable": 0.0,
+            "empty_result_rate_unanswerable": null,
+            "mean_latency_ms": 0.422
+          },
+          "dependency": {
+            "sample_count": 1,
+            "answerable_denominator": 1,
+            "unanswerable_denominator": 0,
+            "recall_at_1": 0.0,
+            "recall_at_5": 0.5,
+            "recall_at_10": 0.5,
+            "mrr": 0.3333,
+            "mean_selected_tokens": 35.0,
+            "budget_violations": 0,
+            "empty_result_rate_answerable": 0.0,
+            "empty_result_rate_unanswerable": null,
+            "mean_latency_ms": 0.39
+          },
+          "direct": {
+            "sample_count": 7,
+            "answerable_denominator": 7,
+            "unanswerable_denominator": 0,
+            "recall_at_1": 0.4286,
+            "recall_at_5": 1.0,
+            "recall_at_10": 1.0,
+            "mrr": 0.9048,
+            "mean_selected_tokens": 38.0,
+            "budget_violations": 0,
+            "empty_result_rate_answerable": 0.0,
+            "empty_result_rate_unanswerable": null,
+            "mean_latency_ms": 0.4323
+          },
+          "paraphrase": {
+            "sample_count": 5,
+            "answerable_denominator": 5,
+            "unanswerable_denominator": 0,
+            "recall_at_1": 0.1,
+            "recall_at_5": 0.2,
+            "recall_at_10": 0.2,
+            "mrr": 0.3,
+            "mean_selected_tokens": 15.0,
+            "budget_violations": 0,
+            "empty_result_rate_answerable": 0.6,
+            "empty_result_rate_unanswerable": null,
+            "mean_latency_ms": 0.3578
+          },
+          "related": {
+            "sample_count": 4,
+            "answerable_denominator": 4,
+            "unanswerable_denominator": 0,
+            "recall_at_1": 0.5,
+            "recall_at_5": 1.0,
+            "recall_at_10": 1.0,
+            "mrr": 1.0,
+            "mean_selected_tokens": 50.0,
+            "budget_violations": 0,
+            "empty_result_rate_answerable": 0.0,
+            "empty_result_rate_unanswerable": null,
+            "mean_latency_ms": 0.4243
+          },
+          "superseded": {
+            "sample_count": 1,
+            "answerable_denominator": 1,
+            "unanswerable_denominator": 0,
+            "recall_at_1": 1.0,
+            "recall_at_5": 1.0,
+            "recall_at_10": 1.0,
+            "mrr": 1.0,
+            "mean_selected_tokens": 40.0,
+            "budget_violations": 0,
+            "empty_result_rate_answerable": 0.0,
+            "empty_result_rate_unanswerable": null,
+            "mean_latency_ms": 0.411
+          },
+          "unanswerable": {
+            "sample_count": 3,
+            "answerable_denominator": 0,
+            "unanswerable_denominator": 3,
+            "recall_at_1": null,
+            "recall_at_5": null,
+            "recall_at_10": null,
+            "mrr": null,
+            "mean_selected_tokens": 0.0,
+            "budget_violations": 0,
+            "empty_result_rate_answerable": null,
+            "empty_result_rate_unanswerable": 1.0,
+            "mean_latency_ms": 0.3423
+          }
+        },
+        "graph": {
+          "contradiction": {
+            "sample_count": 1,
+            "answerable_denominator": 1,
+            "unanswerable_denominator": 0,
+            "recall_at_1": 1.0,
+            "recall_at_5": 1.0,
+            "recall_at_10": 1.0,
+            "mrr": 1.0,
+            "mean_selected_tokens": 41.0,
+            "budget_violations": 0,
+            "empty_result_rate_answerable": 0.0,
+            "empty_result_rate_unanswerable": null,
+            "mean_latency_ms": 0.689
+          },
+          "dependency": {
+            "sample_count": 1,
+            "answerable_denominator": 1,
+            "unanswerable_denominator": 0,
+            "recall_at_1": 0.0,
+            "recall_at_5": 1.0,
+            "recall_at_10": 1.0,
+            "mrr": 0.3333,
+            "mean_selected_tokens": 62.0,
+            "budget_violations": 0,
+            "empty_result_rate_answerable": 0.0,
+            "empty_result_rate_unanswerable": null,
+            "mean_latency_ms": 0.728
+          },
+          "direct": {
+            "sample_count": 7,
+            "answerable_denominator": 7,
+            "unanswerable_denominator": 0,
+            "recall_at_1": 0.4286,
+            "recall_at_5": 1.0,
+            "recall_at_10": 1.0,
+            "mrr": 0.9048,
+            "mean_selected_tokens": 43.4286,
+            "budget_violations": 0,
+            "empty_result_rate_answerable": 0.0,
+            "empty_result_rate_unanswerable": null,
+            "mean_latency_ms": 0.6837
+          },
+          "paraphrase": {
+            "sample_count": 5,
+            "answerable_denominator": 5,
+            "unanswerable_denominator": 0,
+            "recall_at_1": 0.0,
+            "recall_at_5": 0.2,
+            "recall_at_10": 0.2,
+            "mrr": 0.2,
+            "mean_selected_tokens": 24.4,
+            "budget_violations": 0,
+            "empty_result_rate_answerable": 0.6,
+            "empty_result_rate_unanswerable": null,
+            "mean_latency_ms": 0.6358
+          },
+          "related": {
+            "sample_count": 4,
+            "answerable_denominator": 4,
+            "unanswerable_denominator": 0,
+            "recall_at_1": 0.5,
+            "recall_at_5": 1.0,
+            "recall_at_10": 1.0,
+            "mrr": 1.0,
+            "mean_selected_tokens": 63.0,
+            "budget_violations": 0,
+            "empty_result_rate_answerable": 0.0,
+            "empty_result_rate_unanswerable": null,
+            "mean_latency_ms": 0.757
+          },
+          "superseded": {
+            "sample_count": 1,
+            "answerable_denominator": 1,
+            "unanswerable_denominator": 0,
+            "recall_at_1": 1.0,
+            "recall_at_5": 1.0,
+            "recall_at_10": 1.0,
+            "mrr": 1.0,
+            "mean_selected_tokens": 40.0,
+            "budget_violations": 0,
+            "empty_result_rate_answerable": 0.0,
+            "empty_result_rate_unanswerable": null,
+            "mean_latency_ms": 0.68
+          },
+          "unanswerable": {
+            "sample_count": 3,
+            "answerable_denominator": 0,
+            "unanswerable_denominator": 3,
+            "recall_at_1": null,
+            "recall_at_5": null,
+            "recall_at_10": null,
+            "mrr": null,
+            "mean_selected_tokens": 0.0,
+            "budget_violations": 0,
+            "empty_result_rate_answerable": null,
+            "empty_result_rate_unanswerable": 1.0,
+            "mean_latency_ms": 0.6033
+          }
+        },
+        "budget": {
+          "contradiction": {
+            "sample_count": 1,
+            "answerable_denominator": 1,
+            "unanswerable_denominator": 0,
+            "recall_at_1": 1.0,
+            "recall_at_5": 1.0,
+            "recall_at_10": 1.0,
+            "mrr": 1.0,
+            "mean_selected_tokens": 41.0,
+            "budget_violations": 0,
+            "empty_result_rate_answerable": 0.0,
+            "empty_result_rate_unanswerable": null,
+            "mean_latency_ms": 0.693
+          },
+          "dependency": {
+            "sample_count": 1,
+            "answerable_denominator": 1,
+            "unanswerable_denominator": 0,
+            "recall_at_1": 0.0,
+            "recall_at_5": 1.0,
+            "recall_at_10": 1.0,
+            "mrr": 0.3333,
+            "mean_selected_tokens": 62.0,
+            "budget_violations": 0,
+            "empty_result_rate_answerable": 0.0,
+            "empty_result_rate_unanswerable": null,
+            "mean_latency_ms": 0.731
+          },
+          "direct": {
+            "sample_count": 7,
+            "answerable_denominator": 7,
+            "unanswerable_denominator": 0,
+            "recall_at_1": 0.4286,
+            "recall_at_5": 1.0,
+            "recall_at_10": 1.0,
+            "mrr": 0.9048,
+            "mean_selected_tokens": 43.4286,
+            "budget_violations": 0,
+            "empty_result_rate_answerable": 0.0,
+            "empty_result_rate_unanswerable": null,
+            "mean_latency_ms": 0.6914
+          },
+          "paraphrase": {
+            "sample_count": 5,
+            "answerable_denominator": 5,
+            "unanswerable_denominator": 0,
+            "recall_at_1": 0.0,
+            "recall_at_5": 0.2,
+            "recall_at_10": 0.2,
+            "mrr": 0.2,
+            "mean_selected_tokens": 22.2,
+            "budget_violations": 0,
+            "empty_result_rate_answerable": 0.6,
+            "empty_result_rate_unanswerable": null,
+            "mean_latency_ms": 0.6744
+          },
+          "related": {
+            "sample_count": 4,
+            "answerable_denominator": 4,
+            "unanswerable_denominator": 0,
+            "recall_at_1": 0.5,
+            "recall_at_5": 1.0,
+            "recall_at_10": 1.0,
+            "mrr": 1.0,
+            "mean_selected_tokens": 52.75,
+            "budget_violations": 0,
+            "empty_result_rate_answerable": 0.0,
+            "empty_result_rate_unanswerable": null,
+            "mean_latency_ms": 0.7542
+          },
+          "superseded": {
+            "sample_count": 1,
+            "answerable_denominator": 1,
+            "unanswerable_denominator": 0,
+            "recall_at_1": 1.0,
+            "recall_at_5": 1.0,
+            "recall_at_10": 1.0,
+            "mrr": 1.0,
+            "mean_selected_tokens": 40.0,
+            "budget_violations": 0,
+            "empty_result_rate_answerable": 0.0,
+            "empty_result_rate_unanswerable": null,
+            "mean_latency_ms": 0.695
+          },
+          "unanswerable": {
+            "sample_count": 3,
+            "answerable_denominator": 0,
+            "unanswerable_denominator": 3,
+            "recall_at_1": null,
+            "recall_at_5": null,
+            "recall_at_10": null,
+            "mrr": null,
+            "mean_selected_tokens": 0.0,
+            "budget_violations": 0,
+            "empty_result_rate_answerable": null,
+            "empty_result_rate_unanswerable": 1.0,
+            "mean_latency_ms": 0.5967
+          }
+        }
+      },
+      "budget_sweep": {
+        "20": {
+          "modes": {
+            "budget": {
+              "sample_count": 22,
+              "answerable_denominator": 19,
+              "unanswerable_denominator": 3,
+              "recall_at_1": 0.3684,
+              "recall_at_5": 0.3684,
+              "recall_at_10": 0.3684,
+              "mrr": 0.6316,
+              "mean_selected_tokens": 9.6364,
+              "budget_violations": 0,
+              "empty_result_rate_answerable": 0.1579,
+              "empty_result_rate_unanswerable": 1.0,
+              "mean_latency_ms": 0.7248
+            }
+          },
+          "by_category": {
+            "contradiction": {
+              "sample_count": 1,
+              "answerable_denominator": 1,
+              "unanswerable_denominator": 0,
+              "recall_at_1": 1.0,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "mrr": 1.0,
+              "mean_selected_tokens": 18.0,
+              "budget_violations": 0,
+              "empty_result_rate_answerable": 0.0,
+              "empty_result_rate_unanswerable": null,
+              "mean_latency_ms": 0.68
+            },
+            "dependency": {
+              "sample_count": 1,
+              "answerable_denominator": 1,
+              "unanswerable_denominator": 0,
+              "recall_at_1": 0.0,
+              "recall_at_5": 0.0,
+              "recall_at_10": 0.0,
+              "mrr": 0.0,
+              "mean_selected_tokens": 11.0,
+              "budget_violations": 0,
+              "empty_result_rate_answerable": 0.0,
+              "empty_result_rate_unanswerable": null,
+              "mean_latency_ms": 0.737
+            },
+            "direct": {
+              "sample_count": 7,
+              "answerable_denominator": 7,
+              "unanswerable_denominator": 0,
+              "recall_at_1": 0.4286,
+              "recall_at_5": 0.4286,
+              "recall_at_10": 0.4286,
+              "mrr": 0.8571,
+              "mean_selected_tokens": 13.2857,
+              "budget_violations": 0,
+              "empty_result_rate_answerable": 0.0,
+              "empty_result_rate_unanswerable": null,
+              "mean_latency_ms": 0.7767
+            },
+            "paraphrase": {
+              "sample_count": 5,
+              "answerable_denominator": 5,
+              "unanswerable_denominator": 0,
+              "recall_at_1": 0.0,
+              "recall_at_5": 0.0,
+              "recall_at_10": 0.0,
+              "mrr": 0.0,
+              "mean_selected_tokens": 4.4,
+              "budget_violations": 0,
+              "empty_result_rate_answerable": 0.6,
+              "empty_result_rate_unanswerable": null,
+              "mean_latency_ms": 0.716
+            },
+            "related": {
+              "sample_count": 4,
+              "answerable_denominator": 4,
+              "unanswerable_denominator": 0,
+              "recall_at_1": 0.5,
+              "recall_at_5": 0.5,
+              "recall_at_10": 0.5,
+              "mrr": 1.0,
+              "mean_selected_tokens": 12.75,
+              "budget_violations": 0,
+              "empty_result_rate_answerable": 0.0,
+              "empty_result_rate_unanswerable": null,
+              "mean_latency_ms": 0.7637
+            },
+            "superseded": {
+              "sample_count": 1,
+              "answerable_denominator": 1,
+              "unanswerable_denominator": 0,
+              "recall_at_1": 1.0,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "mrr": 1.0,
+              "mean_selected_tokens": 17.0,
+              "budget_violations": 0,
+              "empty_result_rate_answerable": 0.0,
+              "empty_result_rate_unanswerable": null,
+              "mean_latency_ms": 0.696
+            },
+            "unanswerable": {
+              "sample_count": 3,
+              "answerable_denominator": 0,
+              "unanswerable_denominator": 3,
+              "recall_at_1": null,
+              "recall_at_5": null,
+              "recall_at_10": null,
+              "mrr": null,
+              "mean_selected_tokens": 0.0,
+              "budget_violations": 0,
+              "empty_result_rate_answerable": null,
+              "empty_result_rate_unanswerable": 1.0,
+              "mean_latency_ms": 0.587
+            }
+          }
+        },
+        "40": {
+          "modes": {
+            "budget": {
+              "sample_count": 22,
+              "answerable_denominator": 19,
+              "unanswerable_denominator": 3,
+              "recall_at_1": 0.3684,
+              "recall_at_5": 0.7368,
+              "recall_at_10": 0.7368,
+              "mrr": 0.7193,
+              "mean_selected_tokens": 23.6818,
+              "budget_violations": 0,
+              "empty_result_rate_answerable": 0.1579,
+              "empty_result_rate_unanswerable": 1.0,
+              "mean_latency_ms": 0.6861
+            }
+          },
+          "by_category": {
+            "contradiction": {
+              "sample_count": 1,
+              "answerable_denominator": 1,
+              "unanswerable_denominator": 0,
+              "recall_at_1": 1.0,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "mrr": 1.0,
+              "mean_selected_tokens": 29.0,
+              "budget_violations": 0,
+              "empty_result_rate_answerable": 0.0,
+              "empty_result_rate_unanswerable": null,
+              "mean_latency_ms": 0.688
+            },
+            "dependency": {
+              "sample_count": 1,
+              "answerable_denominator": 1,
+              "unanswerable_denominator": 0,
+              "recall_at_1": 0.0,
+              "recall_at_5": 0.5,
+              "recall_at_10": 0.5,
+              "mrr": 0.3333,
+              "mean_selected_tokens": 35.0,
+              "budget_violations": 0,
+              "empty_result_rate_answerable": 0.0,
+              "empty_result_rate_unanswerable": null,
+              "mean_latency_ms": 0.734
+            },
+            "direct": {
+              "sample_count": 7,
+              "answerable_denominator": 7,
+              "unanswerable_denominator": 0,
+              "recall_at_1": 0.4286,
+              "recall_at_5": 0.9286,
+              "recall_at_10": 0.9286,
+              "mrr": 0.9048,
+              "mean_selected_tokens": 30.4286,
+              "budget_violations": 0,
+              "empty_result_rate_answerable": 0.0,
+              "empty_result_rate_unanswerable": null,
+              "mean_latency_ms": 0.6844
+            },
+            "paraphrase": {
+              "sample_count": 5,
+              "answerable_denominator": 5,
+              "unanswerable_denominator": 0,
+              "recall_at_1": 0.0,
+              "recall_at_5": 0.2,
+              "recall_at_10": 0.2,
+              "mrr": 0.2,
+              "mean_selected_tokens": 14.2,
+              "budget_violations": 0,
+              "empty_result_rate_answerable": 0.6,
+              "empty_result_rate_unanswerable": null,
+              "mean_latency_ms": 0.6648
+            },
+            "related": {
+              "sample_count": 4,
+              "answerable_denominator": 4,
+              "unanswerable_denominator": 0,
+              "recall_at_1": 0.5,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "mrr": 1.0,
+              "mean_selected_tokens": 33.25,
+              "budget_violations": 0,
+              "empty_result_rate_answerable": 0.0,
+              "empty_result_rate_unanswerable": null,
+              "mean_latency_ms": 0.7708
+            },
+            "superseded": {
+              "sample_count": 1,
+              "answerable_denominator": 1,
+              "unanswerable_denominator": 0,
+              "recall_at_1": 1.0,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "mrr": 1.0,
+              "mean_selected_tokens": 40.0,
+              "budget_violations": 0,
+              "empty_result_rate_answerable": 0.0,
+              "empty_result_rate_unanswerable": null,
+              "mean_latency_ms": 0.7
+            },
+            "unanswerable": {
+              "sample_count": 3,
+              "answerable_denominator": 0,
+              "unanswerable_denominator": 3,
+              "recall_at_1": null,
+              "recall_at_5": null,
+              "recall_at_10": null,
+              "mrr": null,
+              "mean_selected_tokens": 0.0,
+              "budget_violations": 0,
+              "empty_result_rate_answerable": null,
+              "empty_result_rate_unanswerable": 1.0,
+              "mean_latency_ms": 0.5913
+            }
+          }
+        },
+        "80": {
+          "modes": {
+            "budget": {
+              "sample_count": 22,
+              "answerable_denominator": 19,
+              "unanswerable_denominator": 3,
+              "recall_at_1": 0.3684,
+              "recall_at_5": 0.7895,
+              "recall_at_10": 0.7895,
+              "mrr": 0.7193,
+              "mean_selected_tokens": 34.9545,
+              "budget_violations": 0,
+              "empty_result_rate_answerable": 0.1579,
+              "empty_result_rate_unanswerable": 1.0,
+              "mean_latency_ms": 0.6924
+            }
+          },
+          "by_category": {
+            "contradiction": {
+              "sample_count": 1,
+              "answerable_denominator": 1,
+              "unanswerable_denominator": 0,
+              "recall_at_1": 1.0,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "mrr": 1.0,
+              "mean_selected_tokens": 41.0,
+              "budget_violations": 0,
+              "empty_result_rate_answerable": 0.0,
+              "empty_result_rate_unanswerable": null,
+              "mean_latency_ms": 0.701
+            },
+            "dependency": {
+              "sample_count": 1,
+              "answerable_denominator": 1,
+              "unanswerable_denominator": 0,
+              "recall_at_1": 0.0,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "mrr": 0.3333,
+              "mean_selected_tokens": 62.0,
+              "budget_violations": 0,
+              "empty_result_rate_answerable": 0.0,
+              "empty_result_rate_unanswerable": null,
+              "mean_latency_ms": 0.735
+            },
+            "direct": {
+              "sample_count": 7,
+              "answerable_denominator": 7,
+              "unanswerable_denominator": 0,
+              "recall_at_1": 0.4286,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "mrr": 0.9048,
+              "mean_selected_tokens": 43.4286,
+              "budget_violations": 0,
+              "empty_result_rate_answerable": 0.0,
+              "empty_result_rate_unanswerable": null,
+              "mean_latency_ms": 0.6904
+            },
+            "paraphrase": {
+              "sample_count": 5,
+              "answerable_denominator": 5,
+              "unanswerable_denominator": 0,
+              "recall_at_1": 0.0,
+              "recall_at_5": 0.2,
+              "recall_at_10": 0.2,
+              "mrr": 0.2,
+              "mean_selected_tokens": 22.2,
+              "budget_violations": 0,
+              "empty_result_rate_answerable": 0.6,
+              "empty_result_rate_unanswerable": null,
+              "mean_latency_ms": 0.6754
+            },
+            "related": {
+              "sample_count": 4,
+              "answerable_denominator": 4,
+              "unanswerable_denominator": 0,
+              "recall_at_1": 0.5,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "mrr": 1.0,
+              "mean_selected_tokens": 52.75,
+              "budget_violations": 0,
+              "empty_result_rate_answerable": 0.0,
+              "empty_result_rate_unanswerable": null,
+              "mean_latency_ms": 0.7768
+            },
+            "superseded": {
+              "sample_count": 1,
+              "answerable_denominator": 1,
+              "unanswerable_denominator": 0,
+              "recall_at_1": 1.0,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "mrr": 1.0,
+              "mean_selected_tokens": 40.0,
+              "budget_violations": 0,
+              "empty_result_rate_answerable": 0.0,
+              "empty_result_rate_unanswerable": null,
+              "mean_latency_ms": 0.704
+            },
+            "unanswerable": {
+              "sample_count": 3,
+              "answerable_denominator": 0,
+              "unanswerable_denominator": 3,
+              "recall_at_1": null,
+              "recall_at_5": null,
+              "recall_at_10": null,
+              "mrr": null,
+              "mean_selected_tokens": 0.0,
+              "budget_violations": 0,
+              "empty_result_rate_answerable": null,
+              "empty_result_rate_unanswerable": 1.0,
+              "mean_latency_ms": 0.592
+            }
+          }
+        }
+      },
+      "questions": [
+        {
+          "id": "booth-before",
+          "split": "heldout",
+          "category": "direct",
+          "modes": {
+            "keyword": {
+              "recall_at_1": 0.5,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "reciprocal_rank": 1.0,
+              "first_relevant_rank": 1,
+              "selected_count": 4,
+              "selected_tokens": 42,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.616,
+              "evidence_source_ids": [
+                "b26",
+                "b41",
+                "b27"
+              ]
+            },
+            "graph": {
+              "recall_at_1": 0.5,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "reciprocal_rank": 1.0,
+              "first_relevant_rank": 1,
+              "selected_count": 4,
+              "selected_tokens": 42,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.747,
+              "evidence_source_ids": [
+                "b26",
+                "b41",
+                "b27"
+              ]
+            },
+            "budget": {
+              "recall_at_1": 0.5,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "reciprocal_rank": 1.0,
+              "first_relevant_rank": 1,
+              "selected_count": 4,
+              "selected_tokens": 42,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.769,
+              "evidence_source_ids": [
+                "b26",
+                "b41",
+                "b27"
+              ]
+            }
+          }
+        },
+        {
+          "id": "volunteer-lead",
+          "split": "heldout",
+          "category": "direct",
+          "modes": {
+            "keyword": {
+              "recall_at_1": 0.5,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "reciprocal_rank": 1.0,
+              "first_relevant_rank": 1,
+              "selected_count": 2,
+              "selected_tokens": 24,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.383,
+              "evidence_source_ids": [
+                "b28",
+                "b29"
+              ]
+            },
+            "graph": {
+              "recall_at_1": 0.5,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "reciprocal_rank": 1.0,
+              "first_relevant_rank": 1,
+              "selected_count": 2,
+              "selected_tokens": 24,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.652,
+              "evidence_source_ids": [
+                "b28",
+                "b29"
+              ]
+            },
+            "budget": {
+              "recall_at_1": 0.5,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "reciprocal_rank": 1.0,
+              "first_relevant_rank": 1,
+              "selected_count": 2,
+              "selected_tokens": 24,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.687,
+              "evidence_source_ids": [
+                "b28",
+                "b29"
+              ]
+            }
+          }
+        },
+        {
+          "id": "bronze-capacity",
+          "split": "heldout",
+          "category": "direct",
+          "modes": {
+            "keyword": {
+              "recall_at_1": 0.5,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "reciprocal_rank": 1.0,
+              "first_relevant_rank": 1,
+              "selected_count": 3,
+              "selected_tokens": 37,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.403,
+              "evidence_source_ids": [
+                "b30",
+                "b31",
+                "b15"
+              ]
+            },
+            "graph": {
+              "recall_at_1": 0.5,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "reciprocal_rank": 1.0,
+              "first_relevant_rank": 1,
+              "selected_count": 6,
+              "selected_tokens": 75,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.695,
+              "evidence_source_ids": [
+                "b30",
+                "b31",
+                "b15",
+                "b18",
+                "b19",
+                "b44"
+              ]
+            },
+            "budget": {
+              "recall_at_1": 0.5,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "reciprocal_rank": 1.0,
+              "first_relevant_rank": 1,
+              "selected_count": 6,
+              "selected_tokens": 75,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.703,
+              "evidence_source_ids": [
+                "b30",
+                "b31",
+                "b15",
+                "b18",
+                "b19",
+                "b44"
+              ]
+            }
+          }
+        },
+        {
+          "id": "patio-date",
+          "split": "heldout",
+          "category": "direct",
+          "modes": {
+            "keyword": {
+              "recall_at_1": 0.5,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "reciprocal_rank": 1.0,
+              "first_relevant_rank": 1,
+              "selected_count": 4,
+              "selected_tokens": 48,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.402,
+              "evidence_source_ids": [
+                "b32",
+                "b33",
+                "b22",
+                "b23"
+              ]
+            },
+            "graph": {
+              "recall_at_1": 0.5,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "reciprocal_rank": 1.0,
+              "first_relevant_rank": 1,
+              "selected_count": 4,
+              "selected_tokens": 48,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.664,
+              "evidence_source_ids": [
+                "b32",
+                "b33",
+                "b22",
+                "b23"
+              ]
+            },
+            "budget": {
+              "recall_at_1": 0.5,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "reciprocal_rank": 1.0,
+              "first_relevant_rank": 1,
+              "selected_count": 4,
+              "selected_tokens": 48,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.667,
+              "evidence_source_ids": [
+                "b32",
+                "b33",
+                "b22",
+                "b23"
+              ]
+            }
+          }
+        },
+        {
+          "id": "invoice-font",
+          "split": "heldout",
+          "category": "direct",
+          "modes": {
+            "keyword": {
+              "recall_at_1": 0.5,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "reciprocal_rank": 1.0,
+              "first_relevant_rank": 1,
+              "selected_count": 2,
+              "selected_tokens": 23,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.381,
+              "evidence_source_ids": [
+                "b34",
+                "b35"
+              ]
+            },
+            "graph": {
+              "recall_at_1": 0.5,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "reciprocal_rank": 1.0,
+              "first_relevant_rank": 1,
+              "selected_count": 2,
+              "selected_tokens": 23,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.633,
+              "evidence_source_ids": [
+                "b34",
+                "b35"
+              ]
+            },
+            "budget": {
+              "recall_at_1": 0.5,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "reciprocal_rank": 1.0,
+              "first_relevant_rank": 1,
+              "selected_count": 2,
+              "selected_tokens": 23,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.637,
+              "evidence_source_ids": [
+                "b34",
+                "b35"
+              ]
+            }
+          }
+        },
+        {
+          "id": "exit-route",
+          "split": "heldout",
+          "category": "direct",
+          "modes": {
+            "keyword": {
+              "recall_at_1": 0.5,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "reciprocal_rank": 1.0,
+              "first_relevant_rank": 1,
+              "selected_count": 2,
+              "selected_tokens": 25,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.366,
+              "evidence_source_ids": [
+                "b36",
+                "b37"
+              ]
+            },
+            "graph": {
+              "recall_at_1": 0.5,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "reciprocal_rank": 1.0,
+              "first_relevant_rank": 1,
+              "selected_count": 2,
+              "selected_tokens": 25,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.65,
+              "evidence_source_ids": [
+                "b36",
+                "b37"
+              ]
+            },
+            "budget": {
+              "recall_at_1": 0.5,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "reciprocal_rank": 1.0,
+              "first_relevant_rank": 1,
+              "selected_count": 2,
+              "selected_tokens": 25,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.633,
+              "evidence_source_ids": [
+                "b36",
+                "b37"
+              ]
+            }
+          }
+        },
+        {
+          "id": "raku-para",
+          "split": "heldout",
+          "category": "paraphrase",
+          "modes": {
+            "keyword": {
+              "recall_at_1": 0.0,
+              "recall_at_5": 0.5,
+              "recall_at_10": 0.5,
+              "reciprocal_rank": 0.5,
+              "first_relevant_rank": 2,
+              "selected_count": 4,
+              "selected_tokens": 50,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.403,
+              "evidence_source_ids": [
+                "b15",
+                "b23",
+                "b30",
+                "b31"
+              ]
+            },
+            "graph": {
+              "recall_at_1": 0.0,
+              "recall_at_5": 0.5,
+              "recall_at_10": 0.5,
+              "reciprocal_rank": 0.5,
+              "first_relevant_rank": 2,
+              "selected_count": 7,
+              "selected_tokens": 88,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.702,
+              "evidence_source_ids": [
+                "b15",
+                "b23",
+                "b30",
+                "b31",
+                "b18",
+                "b19",
+                "b44"
+              ]
+            },
+            "budget": {
+              "recall_at_1": 0.0,
+              "recall_at_5": 0.5,
+              "recall_at_10": 0.5,
+              "reciprocal_rank": 0.5,
+              "first_relevant_rank": 2,
+              "selected_count": 6,
+              "selected_tokens": 77,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.688,
+              "evidence_source_ids": [
+                "b15",
+                "b23",
+                "b30",
+                "b31",
+                "b18",
+                "b19"
+              ]
+            }
+          }
+        },
+        {
+          "id": "cabinet-para",
+          "split": "heldout",
+          "category": "paraphrase",
+          "modes": {
+            "keyword": {
+              "recall_at_1": 0.0,
+              "recall_at_5": 0.0,
+              "recall_at_10": 0.0,
+              "reciprocal_rank": 0.0,
+              "first_relevant_rank": null,
+              "selected_count": 0,
+              "selected_tokens": 0,
+              "budget_violation": false,
+              "empty": true,
+              "latency_ms": 0.33,
+              "evidence_source_ids": []
+            },
+            "graph": {
+              "recall_at_1": 0.0,
+              "recall_at_5": 0.0,
+              "recall_at_10": 0.0,
+              "reciprocal_rank": 0.0,
+              "first_relevant_rank": null,
+              "selected_count": 0,
+              "selected_tokens": 0,
+              "budget_violation": false,
+              "empty": true,
+              "latency_ms": 0.601,
+              "evidence_source_ids": []
+            },
+            "budget": {
+              "recall_at_1": 0.0,
+              "recall_at_5": 0.0,
+              "recall_at_10": 0.0,
+              "reciprocal_rank": 0.0,
+              "first_relevant_rank": null,
+              "selected_count": 0,
+              "selected_tokens": 0,
+              "budget_violation": false,
+              "empty": true,
+              "latency_ms": 0.583,
+              "evidence_source_ids": []
+            }
+          }
+        },
+        {
+          "id": "volunteer-para",
+          "split": "heldout",
+          "category": "paraphrase",
+          "modes": {
+            "keyword": {
+              "recall_at_1": 0.5,
+              "recall_at_5": 0.5,
+              "recall_at_10": 0.5,
+              "reciprocal_rank": 1.0,
+              "first_relevant_rank": 1,
+              "selected_count": 2,
+              "selected_tokens": 25,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.369,
+              "evidence_source_ids": [
+                "b29",
+                "b05"
+              ]
+            },
+            "graph": {
+              "recall_at_1": 0.0,
+              "recall_at_5": 0.5,
+              "recall_at_10": 0.5,
+              "reciprocal_rank": 0.5,
+              "first_relevant_rank": 2,
+              "selected_count": 3,
+              "selected_tokens": 34,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.666,
+              "evidence_source_ids": [
+                "b06",
+                "b29",
+                "b05"
+              ]
+            },
+            "budget": {
+              "recall_at_1": 0.0,
+              "recall_at_5": 0.5,
+              "recall_at_10": 0.5,
+              "reciprocal_rank": 0.5,
+              "first_relevant_rank": 2,
+              "selected_count": 3,
+              "selected_tokens": 34,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.895,
+              "evidence_source_ids": [
+                "b06",
+                "b29",
+                "b05"
+              ]
+            }
+          }
+        },
+        {
+          "id": "tea-para",
+          "split": "heldout",
+          "category": "paraphrase",
+          "modes": {
+            "keyword": {
+              "recall_at_1": 0.0,
+              "recall_at_5": 0.0,
+              "recall_at_10": 0.0,
+              "reciprocal_rank": 0.0,
+              "first_relevant_rank": null,
+              "selected_count": 0,
+              "selected_tokens": 0,
+              "budget_violation": false,
+              "empty": true,
+              "latency_ms": 0.357,
+              "evidence_source_ids": []
+            },
+            "graph": {
+              "recall_at_1": 0.0,
+              "recall_at_5": 0.0,
+              "recall_at_10": 0.0,
+              "reciprocal_rank": 0.0,
+              "first_relevant_rank": null,
+              "selected_count": 0,
+              "selected_tokens": 0,
+              "budget_violation": false,
+              "empty": true,
+              "latency_ms": 0.616,
+              "evidence_source_ids": []
+            },
+            "budget": {
+              "recall_at_1": 0.0,
+              "recall_at_5": 0.0,
+              "recall_at_10": 0.0,
+              "reciprocal_rank": 0.0,
+              "first_relevant_rank": null,
+              "selected_count": 0,
+              "selected_tokens": 0,
+              "budget_violation": false,
+              "empty": true,
+              "latency_ms": 0.612,
+              "evidence_source_ids": []
+            }
+          }
+        },
+        {
+          "id": "invoice-billing",
+          "split": "heldout",
+          "category": "related",
+          "modes": {
+            "keyword": {
+              "recall_at_1": 0.5,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "reciprocal_rank": 1.0,
+              "first_relevant_rank": 1,
+              "selected_count": 2,
+              "selected_tokens": 23,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.379,
+              "evidence_source_ids": [
+                "b35",
+                "b34"
+              ]
+            },
+            "graph": {
+              "recall_at_1": 0.5,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "reciprocal_rank": 1.0,
+              "first_relevant_rank": 1,
+              "selected_count": 2,
+              "selected_tokens": 23,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.665,
+              "evidence_source_ids": [
+                "b35",
+                "b34"
+              ]
+            },
+            "budget": {
+              "recall_at_1": 0.5,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "reciprocal_rank": 1.0,
+              "first_relevant_rank": 1,
+              "selected_count": 2,
+              "selected_tokens": 23,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.674,
+              "evidence_source_ids": [
+                "b35",
+                "b34"
+              ]
+            }
+          }
+        },
+        {
+          "id": "apprentice-class",
+          "split": "heldout",
+          "category": "related",
+          "modes": {
+            "keyword": {
+              "recall_at_1": 0.5,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "reciprocal_rank": 1.0,
+              "first_relevant_rank": 1,
+              "selected_count": 5,
+              "selected_tokens": 59,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.436,
+              "evidence_source_ids": [
+                "b15",
+                "b14",
+                "b44",
+                "b30",
+                "b31"
+              ]
+            },
+            "graph": {
+              "recall_at_1": 0.5,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "reciprocal_rank": 1.0,
+              "first_relevant_rank": 1,
+              "selected_count": 7,
+              "selected_tokens": 86,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.803,
+              "evidence_source_ids": [
+                "b15",
+                "b14",
+                "b44",
+                "b30",
+                "b31",
+                "b18",
+                "b19"
+              ]
+            },
+            "budget": {
+              "recall_at_1": 0.5,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "reciprocal_rank": 1.0,
+              "first_relevant_rank": 1,
+              "selected_count": 6,
+              "selected_tokens": 71,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.79,
+              "evidence_source_ids": [
+                "b15",
+                "b14",
+                "b44",
+                "b30",
+                "b31",
+                "b18"
+              ]
+            }
+          }
+        },
+        {
+          "id": "shipping-order",
+          "split": "heldout",
+          "category": "related",
+          "modes": {
+            "keyword": {
+              "recall_at_1": 0.5,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "reciprocal_rank": 1.0,
+              "first_relevant_rank": 1,
+              "selected_count": 7,
+              "selected_tokens": 81,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.487,
+              "evidence_source_ids": [
+                "b13",
+                "b12",
+                "b43",
+                "b09",
+                "b07",
+                "b08"
+              ]
+            },
+            "graph": {
+              "recall_at_1": 0.5,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "reciprocal_rank": 1.0,
+              "first_relevant_rank": 1,
+              "selected_count": 9,
+              "selected_tokens": 106,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.841,
+              "evidence_source_ids": [
+                "b13",
+                "b12",
+                "b43",
+                "b09",
+                "b16",
+                "b17",
+                "b07",
+                "b08"
+              ]
+            },
+            "budget": {
+              "recall_at_1": 0.5,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "reciprocal_rank": 1.0,
+              "first_relevant_rank": 1,
+              "selected_count": 7,
+              "selected_tokens": 80,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.836,
+              "evidence_source_ids": [
+                "b13",
+                "b12",
+                "b43",
+                "b09",
+                "b16",
+                "b07"
+              ]
+            }
+          }
+        },
+        {
+          "id": "membership-now",
+          "split": "heldout",
+          "category": "superseded",
+          "modes": {
+            "keyword": {
+              "recall_at_1": 1.0,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "reciprocal_rank": 1.0,
+              "first_relevant_rank": 1,
+              "selected_count": 4,
+              "selected_tokens": 40,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.411,
+              "evidence_source_ids": [
+                "b40",
+                "b20",
+                "b21"
+              ]
+            },
+            "graph": {
+              "recall_at_1": 1.0,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "reciprocal_rank": 1.0,
+              "first_relevant_rank": 1,
+              "selected_count": 4,
+              "selected_tokens": 40,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.68,
+              "evidence_source_ids": [
+                "b40",
+                "b20",
+                "b21"
+              ]
+            },
+            "budget": {
+              "recall_at_1": 1.0,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "reciprocal_rank": 1.0,
+              "first_relevant_rank": 1,
+              "selected_count": 4,
+              "selected_tokens": 40,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.695,
+              "evidence_source_ids": [
+                "b40",
+                "b20",
+                "b21"
+              ]
+            }
+          }
+        },
+        {
+          "id": "tea-now",
+          "split": "heldout",
+          "category": "contradiction",
+          "modes": {
+            "keyword": {
+              "recall_at_1": 1.0,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "reciprocal_rank": 1.0,
+              "first_relevant_rank": 1,
+              "selected_count": 4,
+              "selected_tokens": 41,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.422,
+              "evidence_source_ids": [
+                "b42",
+                "b38",
+                "b39"
+              ]
+            },
+            "graph": {
+              "recall_at_1": 1.0,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "reciprocal_rank": 1.0,
+              "first_relevant_rank": 1,
+              "selected_count": 4,
+              "selected_tokens": 41,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.689,
+              "evidence_source_ids": [
+                "b42",
+                "b38",
+                "b39"
+              ]
+            },
+            "budget": {
+              "recall_at_1": 1.0,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "reciprocal_rank": 1.0,
+              "first_relevant_rank": 1,
+              "selected_count": 4,
+              "selected_tokens": 41,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.693,
+              "evidence_source_ids": [
+                "b42",
+                "b38",
+                "b39"
+              ]
+            }
+          }
+        },
+        {
+          "id": "apprentice-depend",
+          "split": "heldout",
+          "category": "dependency",
+          "modes": {
+            "keyword": {
+              "recall_at_1": 0.0,
+              "recall_at_5": 0.5,
+              "recall_at_10": 0.5,
+              "reciprocal_rank": 0.3333,
+              "first_relevant_rank": 3,
+              "selected_count": 3,
+              "selected_tokens": 35,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.39,
+              "evidence_source_ids": [
+                "b14",
+                "b15",
+                "b44"
+              ]
+            },
+            "graph": {
+              "recall_at_1": 0.0,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "reciprocal_rank": 0.3333,
+              "first_relevant_rank": 3,
+              "selected_count": 5,
+              "selected_tokens": 62,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.728,
+              "evidence_source_ids": [
+                "b14",
+                "b15",
+                "b44",
+                "b18",
+                "b19"
+              ]
+            },
+            "budget": {
+              "recall_at_1": 0.0,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "reciprocal_rank": 0.3333,
+              "first_relevant_rank": 3,
+              "selected_count": 5,
+              "selected_tokens": 62,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.731,
+              "evidence_source_ids": [
+                "b14",
+                "b15",
+                "b44",
+                "b18",
+                "b19"
+              ]
+            }
+          }
+        },
+        {
+          "id": "printer",
+          "split": "heldout",
+          "category": "unanswerable",
+          "modes": {
+            "keyword": {
+              "recall_at_1": null,
+              "recall_at_5": null,
+              "recall_at_10": null,
+              "reciprocal_rank": null,
+              "first_relevant_rank": null,
+              "selected_count": 0,
+              "selected_tokens": 0,
+              "budget_violation": false,
+              "empty": true,
+              "latency_ms": 0.323,
+              "evidence_source_ids": []
+            },
+            "graph": {
+              "recall_at_1": null,
+              "recall_at_5": null,
+              "recall_at_10": null,
+              "reciprocal_rank": null,
+              "first_relevant_rank": null,
+              "selected_count": 0,
+              "selected_tokens": 0,
+              "budget_violation": false,
+              "empty": true,
+              "latency_ms": 0.587,
+              "evidence_source_ids": []
+            },
+            "budget": {
+              "recall_at_1": null,
+              "recall_at_5": null,
+              "recall_at_10": null,
+              "reciprocal_rank": null,
+              "first_relevant_rank": null,
+              "selected_count": 0,
+              "selected_tokens": 0,
+              "budget_violation": false,
+              "empty": true,
+              "latency_ms": 0.581,
+              "evidence_source_ids": []
+            }
+          }
+        },
+        {
+          "id": "visa",
+          "split": "heldout",
+          "category": "unanswerable",
+          "modes": {
+            "keyword": {
+              "recall_at_1": null,
+              "recall_at_5": null,
+              "recall_at_10": null,
+              "reciprocal_rank": null,
+              "first_relevant_rank": null,
+              "selected_count": 0,
+              "selected_tokens": 0,
+              "budget_violation": false,
+              "empty": true,
+              "latency_ms": 0.375,
+              "evidence_source_ids": []
+            },
+            "graph": {
+              "recall_at_1": null,
+              "recall_at_5": null,
+              "recall_at_10": null,
+              "reciprocal_rank": null,
+              "first_relevant_rank": null,
+              "selected_count": 0,
+              "selected_tokens": 0,
+              "budget_violation": false,
+              "empty": true,
+              "latency_ms": 0.612,
+              "evidence_source_ids": []
+            },
+            "budget": {
+              "recall_at_1": null,
+              "recall_at_5": null,
+              "recall_at_10": null,
+              "reciprocal_rank": null,
+              "first_relevant_rank": null,
+              "selected_count": 0,
+              "selected_tokens": 0,
+              "budget_violation": false,
+              "empty": true,
+              "latency_ms": 0.606,
+              "evidence_source_ids": []
+            }
+          }
+        },
+        {
+          "id": "router",
+          "split": "heldout",
+          "category": "unanswerable",
+          "modes": {
+            "keyword": {
+              "recall_at_1": null,
+              "recall_at_5": null,
+              "recall_at_10": null,
+              "reciprocal_rank": null,
+              "first_relevant_rank": null,
+              "selected_count": 0,
+              "selected_tokens": 0,
+              "budget_violation": false,
+              "empty": true,
+              "latency_ms": 0.329,
+              "evidence_source_ids": []
+            },
+            "graph": {
+              "recall_at_1": null,
+              "recall_at_5": null,
+              "recall_at_10": null,
+              "reciprocal_rank": null,
+              "first_relevant_rank": null,
+              "selected_count": 0,
+              "selected_tokens": 0,
+              "budget_violation": false,
+              "empty": true,
+              "latency_ms": 0.611,
+              "evidence_source_ids": []
+            },
+            "budget": {
+              "recall_at_1": null,
+              "recall_at_5": null,
+              "recall_at_10": null,
+              "reciprocal_rank": null,
+              "first_relevant_rank": null,
+              "selected_count": 0,
+              "selected_tokens": 0,
+              "budget_violation": false,
+              "empty": true,
+              "latency_ms": 0.603,
+              "evidence_source_ids": []
+            }
+          }
+        },
+        {
+          "id": "gallery-historical",
+          "split": "heldout",
+          "category": "direct",
+          "modes": {
+            "keyword": {
+              "recall_at_1": 0.0,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "reciprocal_rank": 0.3333,
+              "first_relevant_rank": 3,
+              "selected_count": 6,
+              "selected_tokens": 67,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.475,
+              "evidence_source_ids": [
+                "b06",
+                "b04",
+                "b05",
+                "b18",
+                "b19"
+              ]
+            },
+            "graph": {
+              "recall_at_1": 0.0,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "reciprocal_rank": 0.3333,
+              "first_relevant_rank": 3,
+              "selected_count": 6,
+              "selected_tokens": 67,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.745,
+              "evidence_source_ids": [
+                "b06",
+                "b04",
+                "b05",
+                "b18",
+                "b19"
+              ]
+            },
+            "budget": {
+              "recall_at_1": 0.0,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "reciprocal_rank": 0.3333,
+              "first_relevant_rank": 3,
+              "selected_count": 6,
+              "selected_tokens": 67,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.744,
+              "evidence_source_ids": [
+                "b06",
+                "b04",
+                "b05",
+                "b18",
+                "b19"
+              ]
+            }
+          }
+        },
+        {
+          "id": "crate-para-held",
+          "split": "heldout",
+          "category": "paraphrase",
+          "modes": {
+            "keyword": {
+              "recall_at_1": 0.0,
+              "recall_at_5": 0.0,
+              "recall_at_10": 0.0,
+              "reciprocal_rank": 0.0,
+              "first_relevant_rank": null,
+              "selected_count": 0,
+              "selected_tokens": 0,
+              "budget_violation": false,
+              "empty": true,
+              "latency_ms": 0.33,
+              "evidence_source_ids": []
+            },
+            "graph": {
+              "recall_at_1": 0.0,
+              "recall_at_5": 0.0,
+              "recall_at_10": 0.0,
+              "reciprocal_rank": 0.0,
+              "first_relevant_rank": null,
+              "selected_count": 0,
+              "selected_tokens": 0,
+              "budget_violation": false,
+              "empty": true,
+              "latency_ms": 0.594,
+              "evidence_source_ids": []
+            },
+            "budget": {
+              "recall_at_1": 0.0,
+              "recall_at_5": 0.0,
+              "recall_at_10": 0.0,
+              "reciprocal_rank": 0.0,
+              "first_relevant_rank": null,
+              "selected_count": 0,
+              "selected_tokens": 0,
+              "budget_violation": false,
+              "empty": true,
+              "latency_ms": 0.594,
+              "evidence_source_ids": []
+            }
+          }
+        },
+        {
+          "id": "indigo-use",
+          "split": "heldout",
+          "category": "related",
+          "modes": {
+            "keyword": {
+              "recall_at_1": 0.5,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "reciprocal_rank": 1.0,
+              "first_relevant_rank": 1,
+              "selected_count": 3,
+              "selected_tokens": 37,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.395,
+              "evidence_source_ids": [
+                "b16",
+                "b17",
+                "b43"
+              ]
+            },
+            "graph": {
+              "recall_at_1": 0.5,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "reciprocal_rank": 1.0,
+              "first_relevant_rank": 1,
+              "selected_count": 3,
+              "selected_tokens": 37,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.719,
+              "evidence_source_ids": [
+                "b16",
+                "b17",
+                "b43"
+              ]
+            },
+            "budget": {
+              "recall_at_1": 0.5,
+              "recall_at_5": 1.0,
+              "recall_at_10": 1.0,
+              "reciprocal_rank": 1.0,
+              "first_relevant_rank": 1,
+              "selected_count": 3,
+              "selected_tokens": 37,
+              "budget_violation": false,
+              "empty": false,
+              "latency_ms": 0.717,
+              "evidence_source_ids": [
+                "b16",
+                "b17",
+                "b43"
+              ]
+            }
+          }
+        }
+      ]
+    }
+  }
+}

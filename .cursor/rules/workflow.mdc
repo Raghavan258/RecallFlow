@@ -1,0 +1,14 @@
+---
+description: Balanced planning, implementation, and verification workflow
+alwaysApply: true
+---
+
+- Inspect relevant code before editing.
+- Use the researcher for complex investigation and the reviewer for independent review.
+- Use the coder for approved implementation and the tester for validation when useful.
+- For substantial tasks, plan first, implement second, verify third.
+- Delegate independent tasks in parallel only when they do not conflict.
+- Do not ask multiple agents to edit the same files concurrently.
+- Review subagent findings critically and verify important claims against code.
+- Ask before destructive changes or high-impact decisions.
+- Report actual validation results and unresolved risks.\n

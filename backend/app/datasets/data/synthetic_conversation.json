@@ -1,0 +1,18 @@
+{
+  "title": "Garden bakery and travel",
+  "messages": [
+    {"speaker": "Ava", "source_id": "m1", "timestamp": "2026-04-01T09:00:00Z", "content": "The greenhouse tomato schedule is Monday and Thursday."},
+    {"speaker": "Ben", "source_id": "m2", "timestamp": "2026-04-01T09:05:00Z", "content": "The greenhouse tomato schedule is Monday and Thursday for the seedlings."},
+    {"speaker": "Ava", "source_id": "m3", "timestamp": "2026-04-02T08:00:00Z", "content": "The bakery opening hour is 8 for the morning service."},
+    {"speaker": "Ben", "source_id": "m4", "timestamp": "2026-04-02T08:05:00Z", "content": "The bakery opening hour is 8 for the morning service."},
+    {"speaker": "Cleo", "source_id": "m5", "timestamp": "2026-04-03T07:00:00Z", "content": "Actually the bakery opening hour is 7. This supersedes the morning bakery opening hour."},
+    {"speaker": "Ava", "source_id": "m6", "timestamp": "2026-04-04T10:00:00Z", "content": "The seedling delivery depends on the greenhouse tomato schedule."},
+    {"speaker": "Ben", "source_id": "m7", "timestamp": "2026-04-04T10:05:00Z", "content": "The seedling delivery is after sunrise for the nursery."},
+    {"speaker": "Ava", "source_id": "m8", "timestamp": "2026-04-05T11:00:00Z", "content": "The Kyoto train ticket is reserved for June."},
+    {"speaker": "Ben", "source_id": "m9", "timestamp": "2026-04-05T11:05:00Z", "content": "The Kyoto train ticket is reserved for June after the visa."},
+    {"speaker": "Ava", "source_id": "m10", "timestamp": "2026-04-06T12:00:00Z", "content": "The river bank picnic is Saturday near the bridge."},
+    {"speaker": "Ben", "source_id": "m11", "timestamp": "2026-04-06T12:05:00Z", "content": "The river bank picnic is Saturday near the bridge."},
+    {"speaker": "Cleo", "source_id": "m12", "timestamp": "2026-04-07T13:00:00Z", "content": "The savings account balance is unchanged this month."},
+    {"speaker": "Ben", "source_id": "m13", "timestamp": "2026-04-07T13:05:00Z", "content": "The savings account balance is unchanged this month."}
+  ]
+}

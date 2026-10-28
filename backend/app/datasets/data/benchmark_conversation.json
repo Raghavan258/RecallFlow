@@ -1,0 +1,270 @@
+{
+  "version": "benchmark-v1",
+  "title": "Studio operations benchmark",
+  "messages": [
+    {
+      "speaker": "Ava",
+      "source_id": "b01",
+      "timestamp": "2026-06-01T08:00:00Z",
+      "content": "The kiln firing temperature is 980 degrees for stoneware."
+    },
+    {
+      "speaker": "Ben",
+      "source_id": "b02",
+      "timestamp": "2026-06-01T09:30:00Z",
+      "content": "The kiln firing temperature is 980 degrees for the studio stoneware."
+    },
+    {
+      "speaker": "Cleo",
+      "source_id": "b03",
+      "timestamp": "2026-06-01T10:00:00Z",
+      "content": "Actually the kiln firing temperature is 1000 degrees. This supersedes the stoneware kiln firing temperature."
+    },
+    {
+      "speaker": "Ava",
+      "source_id": "b04",
+      "timestamp": "2026-06-01T11:30:00Z",
+      "content": "The gallery opening hour is 10 for visitors."
+    },
+    {
+      "speaker": "Ben",
+      "source_id": "b05",
+      "timestamp": "2026-06-01T12:00:00Z",
+      "content": "The gallery opening hour is 10 for the weekend visitors."
+    },
+    {
+      "speaker": "Cleo",
+      "source_id": "b06",
+      "timestamp": "2026-06-01T13:30:00Z",
+      "content": "Actually the gallery opening hour is 11. This supersedes the visitor gallery opening hour."
+    },
+    {
+      "speaker": "Ava",
+      "source_id": "b07",
+      "timestamp": "2026-06-01T14:00:00Z",
+      "content": "The clay order quantity is 40 bags for porcelain."
+    },
+    {
+      "speaker": "Ben",
+      "source_id": "b08",
+      "timestamp": "2026-06-01T15:30:00Z",
+      "content": "The clay order quantity is 40 bags for the porcelain studio."
+    },
+    {
+      "speaker": "Cleo",
+      "source_id": "b09",
+      "timestamp": "2026-06-01T16:00:00Z",
+      "content": "Actually the clay order quantity is 25 bags. This contradicts the porcelain clay order quantity."
+    },
+    {
+      "speaker": "Ava",
+      "source_id": "b10",
+      "timestamp": "2026-06-01T17:30:00Z",
+      "content": "The glaze recipe depends on the kiln firing temperature."
+    },
+    {
+      "speaker": "Ben",
+      "source_id": "b11",
+      "timestamp": "2026-06-01T18:00:00Z",
+      "content": "The glaze recipe is glossy for the studio mugs."
+    },
+    {
+      "speaker": "Ava",
+      "source_id": "b12",
+      "timestamp": "2026-06-01T19:30:00Z",
+      "content": "The shipping crate weight is 12 kilograms for framed prints."
+    },
+    {
+      "speaker": "Ben",
+      "source_id": "b13",
+      "timestamp": "2026-06-01T08:00:00Z",
+      "content": "The shipping crate weight is 12 kilograms for the framed print order."
+    },
+    {
+      "speaker": "Ava",
+      "source_id": "b14",
+      "timestamp": "2026-06-01T09:30:00Z",
+      "content": "The apprentice schedule is Tuesday and Friday for throwing."
+    },
+    {
+      "speaker": "Ben",
+      "source_id": "b15",
+      "timestamp": "2026-06-01T10:00:00Z",
+      "content": "The apprentice schedule is Tuesday and Friday for the throwing class."
+    },
+    {
+      "speaker": "Ava",
+      "source_id": "b16",
+      "timestamp": "2026-06-01T11:30:00Z",
+      "content": "The exhibition poster color is indigo for the spring show."
+    },
+    {
+      "speaker": "Ben",
+      "source_id": "b17",
+      "timestamp": "2026-06-01T12:00:00Z",
+      "content": "The exhibition poster color is indigo for the spring show invitations."
+    },
+    {
+      "speaker": "Ava",
+      "source_id": "b18",
+      "timestamp": "2026-06-01T13:30:00Z",
+      "content": "The studio rent payment is due on the first Monday."
+    },
+    {
+      "speaker": "Ben",
+      "source_id": "b19",
+      "timestamp": "2026-06-01T14:00:00Z",
+      "content": "The studio rent payment is due on the first Monday of each month."
+    },
+    {
+      "speaker": "Ava",
+      "source_id": "b20",
+      "timestamp": "2026-06-01T15:30:00Z",
+      "content": "The membership fee is 30 dollars for community access."
+    },
+    {
+      "speaker": "Ben",
+      "source_id": "b21",
+      "timestamp": "2026-06-01T16:00:00Z",
+      "content": "The membership fee is 30 dollars for community access cards."
+    },
+    {
+      "speaker": "Ava",
+      "source_id": "b22",
+      "timestamp": "2026-06-01T17:30:00Z",
+      "content": "The raku workshop date is March 14 for beginners."
+    },
+    {
+      "speaker": "Ben",
+      "source_id": "b23",
+      "timestamp": "2026-06-01T18:00:00Z",
+      "content": "The raku workshop date is March 14 for the beginner cohort."
+    },
+    {
+      "speaker": "Ava",
+      "source_id": "b24",
+      "timestamp": "2026-06-01T19:30:00Z",
+      "content": "The tool cabinet code is 4412 for the shared studio."
+    },
+    {
+      "speaker": "Ben",
+      "source_id": "b25",
+      "timestamp": "2026-06-02T08:00:00Z",
+      "content": "The tool cabinet code is 4412 for shared studio residents."
+    },
+    {
+      "speaker": "Ava",
+      "source_id": "b26",
+      "timestamp": "2026-06-02T09:30:00Z",
+      "content": "The photo booth backdrop is linen for product shots."
+    },
+    {
+      "speaker": "Ben",
+      "source_id": "b27",
+      "timestamp": "2026-06-02T10:00:00Z",
+      "content": "The photo booth backdrop is linen for the product shot catalog."
+    },
+    {
+      "speaker": "Ava",
+      "source_id": "b28",
+      "timestamp": "2026-06-02T11:30:00Z",
+      "content": "The volunteer shift lead is Nora for Saturday reception."
+    },
+    {
+      "speaker": "Ben",
+      "source_id": "b29",
+      "timestamp": "2026-06-02T12:00:00Z",
+      "content": "The volunteer shift lead is Nora for the Saturday reception desk."
+    },
+    {
+      "speaker": "Ava",
+      "source_id": "b30",
+      "timestamp": "2026-06-02T13:30:00Z",
+      "content": "The bronze class capacity is 8 students for casting."
+    },
+    {
+      "speaker": "Ben",
+      "source_id": "b31",
+      "timestamp": "2026-06-02T14:00:00Z",
+      "content": "The bronze class capacity is 8 students for the casting course."
+    },
+    {
+      "speaker": "Ava",
+      "source_id": "b32",
+      "timestamp": "2026-06-02T15:30:00Z",
+      "content": "The patio sale date is June 6 for seconds."
+    },
+    {
+      "speaker": "Ben",
+      "source_id": "b33",
+      "timestamp": "2026-06-02T16:00:00Z",
+      "content": "The patio sale date is June 6 for the seconds table."
+    },
+    {
+      "speaker": "Ava",
+      "source_id": "b34",
+      "timestamp": "2026-06-02T17:30:00Z",
+      "content": "The invoice template font is Source Serif for clients."
+    },
+    {
+      "speaker": "Ben",
+      "source_id": "b35",
+      "timestamp": "2026-06-02T18:00:00Z",
+      "content": "The invoice template font is Source Serif for client billing."
+    },
+    {
+      "speaker": "Ava",
+      "source_id": "b36",
+      "timestamp": "2026-06-02T19:30:00Z",
+      "content": "The emergency exit route is through the alley door."
+    },
+    {
+      "speaker": "Ben",
+      "source_id": "b37",
+      "timestamp": "2026-06-02T08:00:00Z",
+      "content": "The emergency exit route is through the alley door by the kiln."
+    },
+    {
+      "speaker": "Ava",
+      "source_id": "b38",
+      "timestamp": "2026-06-02T09:30:00Z",
+      "content": "The tea cupboard stock is oolong for the lounge."
+    },
+    {
+      "speaker": "Ben",
+      "source_id": "b39",
+      "timestamp": "2026-06-02T10:00:00Z",
+      "content": "The tea cupboard stock is oolong for the lounge shelf."
+    },
+    {
+      "speaker": "Cleo",
+      "source_id": "b40",
+      "timestamp": "2026-06-02T11:30:00Z",
+      "content": "Actually the membership fee is 20 dollars. This supersedes the community membership fee."
+    },
+    {
+      "speaker": "Cleo",
+      "source_id": "b41",
+      "timestamp": "2026-06-02T12:00:00Z",
+      "content": "Actually the photo booth backdrop is canvas. This contradicts the linen photo booth backdrop."
+    },
+    {
+      "speaker": "Cleo",
+      "source_id": "b42",
+      "timestamp": "2026-06-02T13:30:00Z",
+      "content": "Actually the tea cupboard stock is green. This contradicts the oolong tea cupboard stock."
+    },
+    {
+      "speaker": "Ava",
+      "source_id": "b43",
+      "timestamp": "2026-06-02T14:00:00Z",
+      "content": "The shipping crate weight depends on the exhibition poster color."
+    },
+    {
+      "speaker": "Ben",
+      "source_id": "b44",
+      "timestamp": "2026-06-02T15:30:00Z",
+      "content": "The apprentice schedule depends on the studio rent payment."
+    }
+  ]
+}
